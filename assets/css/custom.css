@@ -1,0 +1,17 @@
+/* Add here all your css styles (customizations) */
+
+
+.bg-gray {
+    background-color: #CCCCCC;
+    color:#808080
+}
+
+.separadores-rojos {
+    border-right: 3px #C12A21 solid;
+}
+
+.separadores-gris {
+border-right: 3px #485463 solid; 
+font-weight: 400; 
+color:#485463
+}

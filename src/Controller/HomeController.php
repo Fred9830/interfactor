@@ -14,4 +14,13 @@ class HomeController extends AbstractController
     {
         return $this->render('home/index.html.twig');
     }
+
+   /**
+     * @Route("/factoring", name="factoring")
+     */
+    public function factoring()
+    {
+        return $this->render('home/factoring.html.twig');
+    }
+
 }

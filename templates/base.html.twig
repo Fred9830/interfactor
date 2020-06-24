@@ -34,7 +34,13 @@
         
         {{ include('menu.html.twig') }}
 
-        {% block body %}{% endblock %}
+        {% block body %}
+
+          
+        {% endblock %}
+        {{ include('footer.html.twig') }}
+      
+        
      <!-- JS Global Compulsory -->
     <script src=" {{ asset('assets/vendor/jquery/jquery.min.js') }} "></script>
     <script src=" {{ asset('assets/vendor/jquery-migrate/jquery-migrate.min.js') }} "></script>

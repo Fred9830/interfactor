@@ -1,5 +1,5 @@
 /* Add here all your css styles (customizations) */
-
+a {cursor: pointer;}
 
 .bg-gray {
     background-color: #CCCCCC;
@@ -15,3 +15,19 @@ border-right: 3px #485463 solid;
 font-weight: 400; 
 color:#485463
 }
+
+.footer-acceso {
+    background-color: #384351; color:#ffffff; padding: 42px 0;
+}
+
+.footer-soporte {
+    background-color: #485463; color:#ffffff; padding: 20px 10px 20px 40px;
+}
+.footer-soporte a{
+    color:#fff;
+}
+.footer-soporte a:hover{
+    color:#C12A21
+}
+
+.footer-borde {border-right:1px #fff solid}

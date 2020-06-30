@@ -1,0 +1,125 @@
+{% extends 'base.html.twig' %}     
+
+{% block stylesheets %}
+    {{ parent() }}
+
+{% endblock %}
+
+
+{% block body %}
+
+  <!-- INICIO BANNER -->
+  <section class="g-mt-130 g-py-50">
+        <img src=" {{ asset('assets/img/banner/banner-empresa.jpg') }}" class="img-fluid" alt="Responsive image">
+
+  </section>
+    <!-- FIN BANNER -->
+
+    {# INICIO TEXTO #}
+    <div class="col-md-4 offset-md-8 g-mb-40">
+               
+                  <a href="/nosotros"> <span  class="g-px-20--lg g-px-10--md separadores-rojos"><strong>NOSOTROS</strong></span>
+                    <span class="sr-only">(current')</span>
+                
+              </a>
+                  <a href="/antecedentes"><span class="g-px-20--lg g-px-10--md">ANTECEDENTES FINANCIEROS</span>
+                
+              </a>
+    </div>  
+
+<div class="row">
+<div class="col-md-6 offset-md-4 g-pb-20">
+Entendemos la realidad del mundo PYME en Chile, sus necesidades, dificultades y capacidades. Conocemos el mercado financiero y las herramientas disponibles, para diseñar soluciones concretas, oportunas, convenientes y altamente eficientes. Contamos con un equipo ejecutivo altamente capacitado y experimentado, comprometido con la salud financiera y el crecimiento de cada uno de nuestros clientes, porque sabemos que su éxito es nuestra mejor carta de presentación.
+<br><br>
+Hoy, Interfactor cuenta con una completa gama de productos para apoyar el desarrollo de PYMES en todo Chile, abarcando una amplia diversidad de rubros y adaptándose a las necesidades y particularidades de cada mercado con flexibilidad, seriedad y solidez financiera a toda prueba.</div>
+
+
+ {# FIN TEXTO #}
+
+
+
+
+  </section>
+    <!-- FIN BANNER -->
+    <!-- SECCION ICONOS -->
+
+      
+    <div class="shortcode-html">
+      
+      
+        <div class="row g-pt-30" style="background:#E6E6E6">
+<!-- icono2 -->
+        <div class="col-lg-3 offset-lg-2 g-mb-10">
+         
+          <div class="media g-mb-15">
+            <div class="d-flex mr-4">
+              <span class="g-color-gray-dark-v4 g-font-size-26">
+                <img src=" {{ asset('assets/img/iconos/persona.jpg') }}">
+              </span>
+            </div>
+            <div class="media-body g-px-20" style="border-left: solid 1px #777777;">
+              <h3 class="h5 g-color-black mb-20">Portal de clientes <br><br></h3>
+              <p class="g-color-gray-dark-v4">Ten acceso a toda la información de tus operaciones y procesa tus facturas on-line.</p>
+              <!-- <a class="g-font-weight-600 g-font-size-12 g-text-underline--none--hover text-uppercase" href="#">Learn More</a> -->
+            </div>
+          </div>
+         
+        </div>
+                  <!-- fin icono 2-->
+
+<!-- icono 3 -->
+        <div class="col-lg-3 g-mb-10">
+
+          <div class="media g-mb-15">
+            <div class="d-flex mr-4">
+              <span class="g-color-gray-dark-v4 g-font-size-26">
+                <img src=" {{ asset('assets/img/iconos/place.jpg') }}">
+              </span>
+            </div>
+            <div class="media-body g-px-20" style="border-left: solid 1px #777777;">
+              <h3 class="h5 g-color-black mb-20">Presentes en 13 regiones de Chile</h3>
+              <p class="g-color-gray-dark-v4">Estamos cerca de nuestros clientes dónde y cuándo nos necesiten.<br><br></p>
+              <!-- <a class="g-font-weight-600 g-font-size-12 g-text-underline--none--hover text-uppercase" href="#">Learn More</a> -->
+            </div>
+          </div>
+        </div>
+                  <!-- fin icono 3-->
+
+          <!-- icono 4-->
+          <div class="col-lg-3  g-mb-10">
+          
+          <div class="media g-mb-15">
+            <div class="d-flex mr-4">
+              <span class="g-color-gray-dark-v4 g-font-size-26">
+                <img src=" {{ asset('assets/img/iconos/procesos.jpg') }}">
+              </span>
+            </div>
+            <div class="media-body g-px-20" style="border-left: solid 1px #777777;">
+              <h3 class="h5 g-color-black mb-20">Procesos ágiles sin interrupciones</h3>
+              <p class="g-color-gray-dark-v4">Reduce el tiempo de giro de tu dinero cediendo a través de nuestro portal.<br><br></p>
+              <!-- <a class="g-font-weight-600 g-font-size-12 g-text-underline--none--hover text-uppercase" href="#">Learn More</a> -->
+            </div>
+          </div>
+          <!-- fin icono 4-->
+        </div>
+      </div>
+     
+    </div>
+    </div>
+      
+    </div>
+    <!-- Fin seccion iconos-->
+
+
+</div>
+</div>
+
+
+
+
+
+
+{% endblock %}
+{% block javascripts  %}
+    {{ parent() }}
+{% endblock %}

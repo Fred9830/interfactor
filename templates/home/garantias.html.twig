@@ -1,0 +1,167 @@
+{% extends 'base.html.twig' %}     
+
+{% block stylesheets %}
+    {{ parent() }}
+
+{% endblock %}
+
+
+{% block body %}
+
+  <!-- INICIO BANNER -->
+  <section class="g-mt-130 g-py-50">
+        <img src=" {{ asset('assets/img/banner/banner-garantias.jpg') }}" class="img-fluid" alt="Responsive image">
+
+  </section>
+    <!-- FIN BANNER -->
+
+    {# INICIO TEXTO #}
+
+<div class="row">
+<div class="col-md-6 offset-md-4 g-pb-20">
+Muchos proyectos con terceros (públicos o privados) exigen una boleta de garantía para asegurar el cumplimiento del contrato, como en el caso de licitaciones, propuestas o subastas, canje de retenciones, garantía de ejecución de obras o inversiones de anticipo, entre otras.
+Puedes contar fácilmente con este requerimiento sin necesidad de endeudarte, a través de una Póliza de Seguro de Garantía gestionada por Interfactor para que nada se interponga en el crecimiento de tu PYME.
+<br><br><ul>
+<li>Te permite acceder a más contratos de manera simultánea.</li>
+<li>No genera endeudamiento de tu PYME con el Sistema Financiero.</li>
+<li>No requiere depósito en dinero.</li>
+</ul></div>
+
+
+
+ {# FIN TEXTO #}
+
+{# INICIO TEXTO #}
+<div class="col-md-6 offset-md-4 g-pb-30 text-center">
+<span style="font-size:31px; font-weight:300">No esperes más. ¡Solicita una cotización hoy mismo!</span>
+
+</div>
+{# FIN TEXTO #}
+
+{# INICIO FORM #}
+
+
+
+
+<div class="row" style="background:#E6E6E6">
+<div class="col-md-6 offset-md-4 g-pb-20 g-pt-20 text-center">
+<span style="font-size:18px;"><strong>COMPLETA TUS DATOS Y UNO DE NUESTROS EJECUTIVOS DE GARANTÍAS SE PONDRÁ EN CONTACTO CONTIGO PARA OFRECERTE LA SOLUCIÓN QUE ESTÁS BUSCANDO.</strong></span>
+
+</div>
+{# INICIOIMAGEN FORM #}
+<div class="col-md-4">
+        <img src=" {{ asset('assets/img/img-form.jpg') }}" class="img-fluid text-right g-pt-60" style="float:right" alt="Responsive image">
+
+</div>
+{# FIN IMAGEN FORM #}
+<div class="col-md-6">
+
+            <div class="shortcode-html">
+              <!-- General Forms -->
+              <form class="g-brd-around  g-pa-30 g-mb-30">
+                <!-- Text nombre de empresa -->
+                <div class="col-md-12">
+                <div class="form-group g-mb-20">
+                  <label class="g-mb-10" for="inputGroup1_1">Nombre Empresa <span style="color:#C12A21">*</span></label>
+                  <input id="inputGroup1_1" class="form-control form-control-md rounded-0" type="text" placeholder="Ingrese Nombre de Empresa">
+                  {# <small class="form-text text-muted g-font-size-default g-mt-10">.</small> #}
+                </div>
+                </div>
+                <!-- End nombre de empresa -->
+                <!-- Text RUT de empresa -->
+                <div class="col-md-6">
+                <div class="form-group g-mb-20">
+                  <label class="g-mb-10" for="inputGroup1_1">Rut Empresa <span style="color:#C12A21">*</span></label>
+                  <input id="inputGroup1_1" class="form-control form-control-md rounded-0" type="number" placeholder="Ingrese Rut de Empresa">
+                  {# <small class="form-text text-muted g-font-size-default g-mt-10">.</small> #}
+                </div>
+                </div>
+                <!-- End nombre de empresa -->
+                
+                <div class="row">
+                <!-- Text RUT de empresa -->
+                <div class="col-md-6">
+                <div class="form-group g-mb-20">
+                  <label class="g-mb-10" for="inputGroup1_1">Teléfono <span style="color:#C12A21">*</span></label>
+                  <input id="inputGroup1_1" class="form-control form-control-md rounded-0" type="number" placeholder="Ingrese Teléfono">
+                  {# <small class="form-text text-muted g-font-size-default g-mt-10">.</small> #}
+                </div>
+                <div class="form-group g-mb-20">
+                  <label class="g-mb-10" for="inputGroup1_1">E-mail <span style="color:#C12A21">*</span></label>
+                  <input id="inputGroup1_1" class="form-control form-control-md rounded-0" type="email" placeholder="Ingrese E-mail">
+                  {# <small class="form-text text-muted g-font-size-default g-mt-10">.</small> #}
+                </div>
+                </div>
+                <!-- End nombre de empresa -->
+                 <!-- Text RUT de empresa -->
+                <div class="col-md-6">
+                <!-- Textarea -->
+  <div class="form-group g-mb-20">
+    <label class="g-mb-10" for="inputGroup2_1">Mensaje <span style="color:#C12A21">*</span></label>
+    <textarea id="inputGroup2_1" class="form-control form-control-md g-resize-none rounded-0" rows="6" placeholder="Text area"></textarea>
+    {# <small class="form-text text-muted g-font-size-default g-mt-10">
+          
+        </small> #}
+  </div>
+  <!-- End Textarea -->
+                </div>
+                </div>
+                 
+                
+                
+                <div class="text-center">
+                <button type="submit" class="btn btn-md u-btn-red rounded-0 g-mt-30" style="padding:10px 50px"><strong>COTIZAR</strong></button>
+                </div>
+
+                <span style="color:#C12A21;font-weight:300">* Campos Obligatorios</span>
+                
+
+               
+                <!-- End Text Input with Both Appended Icon -->
+              </form>
+              <!-- End General Forms -->
+            </div>
+
+            <div class="shortcode-styles">
+              <!-- CSS Implementing Plugins -->
+              <link  rel="stylesheet" href="../../../assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+            </div>
+
+            <div class="shortcode-scripts">
+              <!-- jQuery UI Core -->
+              <script  src="../../../assets/vendor/jquery-ui/jquery-ui.core.js"></script>
+
+              <!-- jQuery UI Helpers -->
+              <script  src="../../../assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+              <script  src="../../../assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+              <!-- jQuery UI Widgets -->
+              <script  src="../../../assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+              <!-- JS Unify -->
+              <script  src="../../../assets/js/components/hs.autocomplete.js"></script>
+
+              <!-- JS Plugins Init. -->
+              <script >
+                $(document).on('ready', function () {
+                      // initialization of autocomplet
+                      $.HSCore.components.HSAutocomplete.init('#autocomplete2');
+                    });
+              </script>
+            </div>
+          
+               
+              
+</div>
+{# FIN FORM #}
+
+
+
+
+
+
+
+{% endblock %}
+{% block javascripts  %}
+    {{ parent() }}
+{% endblock %}

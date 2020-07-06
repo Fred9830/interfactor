@@ -50,5 +50,27 @@ class HomeController extends AbstractController
     {
         return $this->render('home/empresa.html.twig');
     }
+               /**
+     * @Route("/antecedentes", name="antecedentes")
+     */
+    public function antecedentes()
+    {
+        return $this->render('home/antecedentes.html.twig');
+    }
+                /**
+     * @Route("/blog", name="blog")
+     */
+    public function blog()
+    {
+        return $this->render('home/blog.html.twig');
+    }
+              /**
+     * @Route("/single_blog", name="single_blog")
+     */
+    public function single_blog()
+    {
+        return $this->render('home/single_blog.html.twig');
+    }
+
 
 }

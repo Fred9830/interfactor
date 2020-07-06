@@ -1,6 +1,13 @@
 /* Add here all your css styles (customizations) */
 a {cursor: pointer;}
 
+a:hover {color:#C12A21!important ;}
+
+p {
+    font-weight: 300;
+}
+.g-color-primary--hover:hover {color:#C12A21!important ;}
+
 .row {
     padding: 0;
     margin: 0;
@@ -56,3 +63,43 @@ color:#485463
 }
 
 label {font-weight: 300;}
+
+.card-block {background:#E6E6E6;}
+.card-body {background:#E6E6E6;}
+
+.accordion>.card>.card-header {background:#E6E6E6;}
+
+.fecha-blog {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+
+.titulo-blog{
+    position: absolute;
+    top: 170px;
+    LEFT: 30px;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 0px 105px 0 0;
+}
+
+.u-pagination-v1-4--active { 
+    background-color: #C12A21;
+    border-color:#fff;
+    
+}
+.u-pagination-v1-4--active:hover { 
+color:#fff !important;
+
+border-color:#fff;
+}
+.u-pagination-v1__item{
+    border: solid 1px #C12A21;
+}
+.u-pagination-v1__item:hover{
+    border: solid 1px #C12A21;
+}
+
+
+}

@@ -1,0 +1,125 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+{{ parent() }}
+
+{% endblock %}
+
+
+{% block body %}
+
+<!-- INICIO BANNER -->
+<section class="g-mt-130 g-pt-50">
+  <img src=" {{ asset('assets/img/banner/banner-blog.jpg') }}" class="img-fluid" alt="Responsive image">
+
+</section>
+<!-- FIN BANNER -->
+
+<div class="row">
+<div class="col-md-6 offset-md-4 g-pb-20">
+
+<!-- Blog Grid Overlap Blocks -->
+    <div class="container g-py-50">
+      <div class="masonry-grid row g-mb-70">
+
+        <div class="masonry-grid-item col-sm-6 g-mb-30">
+          <!-- Blog Grid Overlap Blocks -->
+          <article>
+            <img class="img-fluid w-100" src="https://via.placeholder.com/500x450" alt="Image Description">
+            <div class="g-pt-40 g-bg-white g-z-index-1 g-mt-minus-50 mx-auto">
+              <span class="d-block g-color-gray-dark-v4 g-font-weight-600 g-font-size-12 text-uppercase mb-2 fecha-blog">28 FEB 2020</span>
+              <h2 class="h5 g-color-black g-font-weight-600 mb-3">
+                  <a class="u-link-v5 g-color-black g-color-primary--hover g-cursor-pointer titulo-blog" href="/single_blog">ACLARA TUS DUDAS PARA HACER FACTORING</a>
+                </h2>
+              <p class="g-color-gray-dark-v4 g-line-height-1_8">El factoring es una alternativa financiera donde las empresas ceden sus documentos por cobrar para transformarlos... <a class="g-font-size-13" href="/single_blog">(Leer más)</a></p>
+              
+            </div>
+          </article>
+          <!-- End Blog Grid Overlap Blocks -->
+        </div>
+
+         <div class="masonry-grid-item col-sm-6 g-mb-30">
+          <!-- Blog Grid Overlap Blocks -->
+          <article>
+            <img class="img-fluid w-100" src="https://via.placeholder.com/500x450" alt="Image Description">
+            <div class="g-pt-40 g-bg-white g-z-index-1 g-mt-minus-50 mx-auto">
+              <span class="d-block g-color-gray-dark-v4 g-font-weight-600 g-font-size-12 text-uppercase mb-2 fecha-blog">11 FEB 2020</span>
+              <h2 class="h5 g-color-black g-font-weight-600 mb-3">
+                  <a class="u-link-v5 g-color-black g-color-primary--hover g-cursor-pointer titulo-blog" href="/single_blog">E-COMMERCE: CAMINO DE EXPANSIÓN PARA 
+LAS PYMES</a>
+                </h2>
+              <p class="g-color-gray-dark-v4 g-line-height-1_8">Chile es un país con buena receptividad hacia las tecnologías, y las PYMES están llamadas a adaptar sus modelos comerciales...<a class="g-font-size-13" href="/single_blog">(Leer más)</a></p>
+              
+            </div>
+          </article>
+          <!-- End Blog Grid Overlap Blocks -->
+        </div>
+         <div class="masonry-grid-item col-sm-6 g-mb-30">
+          <!-- Blog Grid Overlap Blocks -->
+          <article>
+            <img class="img-fluid w-100" src="https://via.placeholder.com/500x450" alt="Image Description">
+            <div class="g-pt-40 g-bg-white g-z-index-1 g-mt-minus-50 mx-auto">
+              <span class="d-block g-color-gray-dark-v4 g-font-weight-600 g-font-size-12 text-uppercase mb-2 fecha-blog">30 ENE 2020</span>
+              <h2 class="h5 g-color-black g-font-weight-600 mb-3">
+                  <a class="u-link-v5 g-color-black g-color-primary--hover g-cursor-pointer titulo-blog" href="/single_blog">ACLARA TUS DUDAS<BR>PARA HACER<BR>FACTORING</a>
+                </h2>
+              <p class="g-color-gray-dark-v4 g-line-height-1_8">El factoring es una alternativa financiera donde las empresas ceden sus documentos por cobrar para transformarlos... <a class="g-font-size-13" href="/single_blog">(Leer más)</a></p>
+              
+            </div>
+          </article>
+          <!-- End Blog Grid Overlap Blocks -->
+        </div>
+         <div class="masonry-grid-item col-sm-6 g-mb-30">
+          <!-- Blog Grid Overlap Blocks -->
+          <article>
+            <img class="img-fluid w-100" src="https://via.placeholder.com/500x450" alt="Image Description">
+            <div class="g-pt-40 g-bg-white g-z-index-1 g-mt-minus-50 mx-auto">
+              <span class="d-block g-color-gray-dark-v4 g-font-weight-600 g-font-size-12 text-uppercase mb-2 fecha-blog">02 ENE 2020</span>
+              <h2 class="h5 g-color-black g-font-weight-600 mb-3">
+                  <a class="u-link-v5 g-color-black g-color-primary--hover g-cursor-pointer titulo-blog" href="/single_blog">ACLARA TUS DUDAS<BR>PARA HACER<BR>FACTORING</a>
+                </h2>
+              <p class="g-color-gray-dark-v4 g-line-height-1_8">El factoring es una alternativa financiera donde las empresas ceden sus documentos por cobrar para transformarlos... <a class="g-font-size-13" href="/single_blog">(Leer más)</a></p>
+              
+            </div>
+          </article>
+          <!-- End Blog Grid Overlap Blocks -->
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <nav class="text-center" aria-label="Page Navigation">
+        <ul class="list-inline">
+          <li class="list-inline-item float-left g-hidden-xs-down">
+            <a class="u-pagination-v1__item u-pagination-v1-4 g-brd-gray-light-v3 g-rounded-50 g-pa-7-16" href="#" aria-label="Previous">
+              <span aria-hidden="true">
+                <i class="fa fa-angle-left g-mr-5"></i> Anterior
+              </span>
+              <span class="sr-only">Siguiente</span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="u-pagination-v1__item u-pagination-v1-4 u-pagination-v1-4--active g-rounded-50 g-pa-7-14" href="#">1</a>
+          </li>
+          <li class="list-inline-item">
+            <a class="u-pagination-v1__item u-pagination-v1-4 g-rounded-50 g-pa-7-14" href="#">2</a>
+          </li>
+          <li class="list-inline-item float-right g-hidden-xs-down">
+            <a class="u-pagination-v1__item u-pagination-v1-4 g-brd-gray-light-v3 g-rounded-50 g-pa-7-16" href="#" aria-label="Next">
+              <span aria-hidden="true">
+                Next <i class="fa fa-angle-right g-ml-5"></i>
+              </span>
+              <span class="sr-only">Next</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- End Pagination -->
+    </div>
+    <!-- End Blog Grid Overlap Blocks -->
+
+</div>
+</div>
+    {% endblock %}
+{% block javascripts  %}
+{{ parent() }}
+{% endblock %}

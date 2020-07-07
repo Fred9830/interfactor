@@ -1,0 +1,82 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+{{ parent() }}
+
+{% endblock %}
+
+
+{% block body %}
+
+<!-- INICIO BANNER -->
+<section class="g-mt-130 g-pt-50">
+  <img src=" {{ asset('assets/img/banner/banner-ejecutivos.jpg') }}" class="img-fluid" alt="Responsive image">
+
+</section>
+<!-- FIN BANNER -->
+
+
+<div class="row" style="background:#E6E6E6">
+{# INICIOIMAGEN FORM #}
+{# FIN IMAGEN FORM #}
+<div class="offset-md-4 col-md-6">
+
+            <div class="shortcode-html">
+              <!-- General Forms -->
+              <form class="g-brd-around  g-pa-30 g-mb-30">
+                <!-- Text nombre de empresa -->
+                <div class="col-md-8">
+                <div class="form-group g-mb-20">
+                  <label class="g-mb-10" for="inputGroup1_1">Rut Cliente <span style="color:#C12A21">*</span></label>
+                  <input id="inputGroup1_1" class="form-control form-control-md rounded-0" type="text" placeholder="Ingrese Rut CLiente">
+                  {# <small class="form-text text-muted g-font-size-default g-mt-10">.</small> #}
+                </div>
+                </div>
+                <!-- End nombre de empresa -->
+                <!-- Text RUT de empresa -->
+                <div class="col-md-8">
+                <div class="form-group g-mb-20">
+                  <label class="g-mb-10" for="inputGroup1_1">Ejecutivo <span style="color:#C12A21">*</span></label>
+                  <input id="inputGroup1_1" class="form-control form-control-md rounded-0" type="number" placeholder="Ingrese Nombre Ejecutivo">
+                  {# <small class="form-text text-muted g-font-size-default g-mt-10">.</small> #}
+                </div>
+                </div>
+                <!-- End nombre de empresa -->
+                
+                <div class="row">
+                <!-- Text RUT de empresa -->
+                <div class="col-md-6">
+
+                <div class="form-group g-mb-20">
+                  <label class="g-mb-10" for="inputGroup1_1">Clave <span style="color:#C12A21">*</span></label>
+                  <input id="inputGroup1_1" class="form-control form-control-md rounded-0" type="text" placeholder="****">
+                  {# <small class="form-text text-muted g-font-size-default g-mt-10">.</small> #}
+                </div>
+                </div>
+                <!-- End nombre de empresa -->
+                 <!-- Text RUT de empresa -->
+                
+  <!-- End Textarea -->
+                </div>
+                </div>
+                 
+                
+                
+                <div class="text-center">
+                <button type="submit" class="btn btn-md u-btn-red rounded-0 g-mt-30" style="padding:10px 50px"><strong>COTIZAR</strong></button>
+                </div>
+
+                <span style="color:#C12A21;font-weight:300">* Campos Obligatorios</span>
+                
+
+               
+                <!-- End Text Input with Both Appended Icon -->
+              </form>
+              <!-- End General Forms -->
+            </div>
+
+
+{% endblock %}
+{% block javascripts  %}
+{{ parent() }}
+{% endblock %}

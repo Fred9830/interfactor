@@ -1,4 +1,7 @@
 /* Add here all your css styles (customizations) */
+body { 
+    font-size: 15px;
+}
 a {cursor: pointer;}
 
 a:hover {color:#C12A21!important ;}
@@ -8,6 +11,12 @@ p {
 }
 .g-color-primary--hover:hover {color:#C12A21!important ;}
 
+.g-color-primary {color:#C12A21!important}
+
+
+.u-accordion-color-primary .u-accordion__header [aria-expanded="true"] {
+    color:#C12A21!important
+}
 .row {
     padding: 0;
     margin: 0;
@@ -91,7 +100,6 @@ label {font-weight: 300;}
 }
 .u-pagination-v1-4--active:hover { 
 color:#fff !important;
-
 border-color:#fff;
 }
 .u-pagination-v1__item{
@@ -101,5 +109,9 @@ border-color:#fff;
     border: solid 1px #C12A21;
 }
 
+li{color:#C12A21}
 
+.faq {
+    color:#4D4D4D;
+    font-weight: 300;;
 }

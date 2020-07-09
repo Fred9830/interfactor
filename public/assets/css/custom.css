@@ -115,3 +115,16 @@ li{color:#C12A21}
     color:#4D4D4D;
     font-weight: 300;;
 }
+
+.blanco {color:#fff}
+
+.cuadro {position: absolute;
+    width: 268px;
+    height: 186px;
+    top: 180px;
+    left: 210px;
+    background: #C12A21;
+    mix-blend-mode: hard-light;
+    z-index: 99;}
+
+.titulo-cuadro {font-size:32px; line-height:35px}

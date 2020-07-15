@@ -2,6 +2,11 @@
 body { 
     font-size: 15px;
 }
+
+::selection {
+    background-color: #C12A21;
+}
+
 a {cursor: pointer;}
 
 a:hover {color:#C12A21!important ;}
@@ -34,6 +39,14 @@ p {
 .u-btn-red {
     background-color: #C12A21;
 }
+
+.u-btn-red:hover {
+    background-color: #C12A21;
+    color:#fff !important;
+}
+.u-btn-bluegray {background:#485463!important; color:#fff!important;}
+
+.u-btn-bluegray:hover {color:#fff !important;}
 
 .separadores-rojos {
     border-right: 3px #C12A21 solid;
@@ -74,6 +87,15 @@ color:#485463
     background: #E6E6E6;
 }
 
+.btn-primary {
+    background-color: #C12A21;
+    border:1px solid #fff;
+}
+.btn-primary:hover {
+    background-color: #C12A21;
+    border:1px solid #fff;
+}
+
 label {font-weight: 300;}
 
 .card-block {background:#E6E6E6;}
@@ -94,6 +116,15 @@ label {font-weight: 300;}
     font-weight: 300;
     font-size: 20px;
     padding: 0px 105px 0 0;
+}
+
+.titulo-single-post{
+    position: absolute;
+    top: 300px;
+    left: 490px;
+    font-size: 2.14286rem;
+    font-weight: 300;
+    padding: 0px 105px 0 0; 
 }
 
 .u-pagination-v1-4--active { 
@@ -130,7 +161,15 @@ li{color:#C12A21}
     mix-blend-mode: hard-light;
     z-index: 99;}
 
+    .padding-cuadro {padding: 28px;}
 .titulo-cuadro {font-size:32px; line-height:35px}
+
+.dropdown-item {color:#fff}
+.dropdown-item:hover {color:#B3B3B3 !important}
+
+.cotiza { min-width: 110.7px; max-width: 110.7px; background-color: #808080;}
+
+.dropdown-divider{margin: 0rem 1rem;}
 
 
 @media (max-width: 991px) {
@@ -138,6 +177,41 @@ li{color:#C12A21}
         border-right: none;
       }
       .separadores-rojos2{
-        padding: 0 10px;
+        margin: 0 10px;
       }
+
+      .titulo-blog{
+        top: 250px;
+    }
+    .titulo-single-post{
+        top: 185px;
+        font-size:1.14286rem;
+        left: 180px;
+    }
+
+    .recientes {display: none;}
+  }
+
+  @media (max-width: 1024px) {
+
+    .cuadro {
+        top: 180px;
+        height: 132px;
+    }
+    .titulo-cuadro {font-size: 30px;
+        line-height: 31px;
+        margin-bottom: 5px;
+    }
+    .padding-cuadro {padding: 10px 28px}
+
+    .titulo-single-post{
+        top: 200px;
+        left: 340px;
+    }
+    .titulo-blog{
+        top: 100px;
+        font-size: 12px;
+    }
+    .footer-borde {border-right:0px #fff solid}
+
   }

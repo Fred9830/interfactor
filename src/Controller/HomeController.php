@@ -87,5 +87,13 @@ class HomeController extends AbstractController
         return $this->render('home/ejecutivos.html.twig');
     }
 
+                          /**
+     * @Route("/sucursales", name="sucursales")
+     */
+    public function sucursales()
+    {
+        return $this->render('home/sucursales.html.twig');
+    }
+
 
 }

@@ -111,7 +111,7 @@ label {font-weight: 300;}
 
 .titulo-blog{
     position: absolute;
-    top: 170px;
+    bottom:100px;
     LEFT: 30px;
     font-weight: 300;
     font-size: 20px;
@@ -192,6 +192,19 @@ li{color:#C12A21}
     .recientes {display: none;}
   }
 
+
+
+  @media (max-width: 1280px) {
+    .cuadro {
+             height: 165px;
+    }
+    .padding-cuadro {padding: 14px 28px}
+
+  .titulo-blog{
+    bottom: 126px;
+    font-size: 18px;    
+    }
+  }
   @media (max-width: 1024px) {
 
     .cuadro {
@@ -209,9 +222,10 @@ li{color:#C12A21}
         left: 340px;
     }
     .titulo-blog{
-        top: 100px;
+        bottom: 155px;
         font-size: 12px;
     }
     .footer-borde {border-right:0px #fff solid}
 
   }
+  

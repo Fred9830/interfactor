@@ -2,6 +2,12 @@
 body { 
     font-size: 15px;
 }
+@media (min-width: 1024px) {
+    .col-xl-2 {
+        max-width: 14.286%;
+     }
+}
+
 
 ::selection {
     background-color: #C12A21;
@@ -195,6 +201,7 @@ li{color:#C12A21}
 
 
   @media (max-width: 1280px) {
+
     .cuadro {
              height: 165px;
     }

@@ -299,6 +299,12 @@ li{color:#C12A21}
         .imgbanner {
             margin-top: 1%;
         } 
+        .acceso{
+            font-size:11px
+        }
+        .clientes{
+            font-size: 12px;
+        }
 }
 @media (max-width: 320px) {
     .logo{
@@ -320,6 +326,15 @@ li{color:#C12A21}
         } 
         .top-font {
             font-size: 12px;
+        }
+        .acceso{
+            font-size:8px
+        }
+        .clientes{
+            font-size: 10px;
+        }
+        .cotizar {
+            font-size: 9px;
         }
 }
 

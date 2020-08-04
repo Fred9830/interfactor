@@ -152,30 +152,12 @@ Interfactor te acompaña durante todo el proceso para que cuentes con el capital
 
               <!-- End File Inputs -->
             </div>
-
-            <div class="shortcode-scripts">
-              <!-- JS Implementing Plugins -->
-              <script  src="../../../assets/vendor/jquery.filer/js/jquery.filer.min.js"></script>
-
-              <!-- JS Unify -->
-              <script  src="../../../assets/js/helpers/hs.focus-state.js"></script>
-              <script  src="../../../assets/js/components/hs.file-attachement.js"></script>
-
-              <!-- JS Plugins Init. -->
-              <script >
-                $(document).on('ready', function () {
-                      // initialization of forms
-                      $.HSCore.components.HSFileAttachment.init('.js-file-attachment');
-                      $.HSCore.helpers.HSFocusState.init();
-                    });
-              </script>
-            </div>
-          
+            
                 </div>
                 </div>
                 
                 <div class="text-center">
-                <button type="submit" class="btn btn-md u-btn-red rounded-0 g-mt-30" style="padding:10px 50px"><strong>COTIZAR</strong></button>
+                <button id="enviarfactoring" type="button" class="btn btn-md u-btn-red rounded-0 g-mt-30" style="padding:10px 50px"><strong>COTIZAR</strong></button>
                 </div>
 
                 <span style="color:#C12A21;font-weight:300">* Campos Obligatorios</span>
@@ -185,37 +167,7 @@ Interfactor te acompaña durante todo el proceso para que cuentes con el capital
                 <!-- End Text Input with Both Appended Icon -->
               </form>
               <!-- End General Forms -->
-            </div>
-
-            <div class="shortcode-styles">
-              <!-- CSS Implementing Plugins -->
-              <link  rel="stylesheet" href="../../../assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
-            </div>
-
-            <div class="shortcode-scripts">
-              <!-- jQuery UI Core -->
-              <script  src="../../../assets/vendor/jquery-ui/jquery-ui.core.js"></script>
-
-              <!-- jQuery UI Helpers -->
-              <script  src="../../../assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
-              <script  src="../../../assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
-
-              <!-- jQuery UI Widgets -->
-              <script  src="../../../assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
-
-              <!-- JS Unify -->
-              <script  src="../../../assets/js/components/hs.autocomplete.js"></script>
-
-              <!-- JS Plugins Init. -->
-              <script >
-                $(document).on('ready', function () {
-                      // initialization of autocomplet
-                      $.HSCore.components.HSAutocomplete.init('#autocomplete2');
-                    });
-              </script>
-            </div>
-          
-               
+            </div>              
               
 </div>
 {# FIN FORM #}
@@ -229,4 +181,6 @@ Interfactor te acompaña durante todo el proceso para que cuentes con el capital
 {% endblock %}
 {% block javascripts  %}
     {{ parent() }}
+
+    <script src="{{ asset('js/api/factoring.js') }}"></script>  
 {% endblock %}

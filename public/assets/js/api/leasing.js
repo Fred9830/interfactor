@@ -3,15 +3,38 @@ jQuery(document).ready(function() {
     jQuery('#enviarleasing').on("click", function(e) {
 
         var form = jQuery('#form-leasing');
-        dato = jQuery('#form-leasing').serialize();
+  
+        dato = jQuery('#form-leasing').serializeArray();
+ 
+        var jsonArray = JSON.parse(JSON.stringify(dato));
+        //dato = jQuery('#form-leasing').serializeArray();
         form.parsley().validate();
         
         if (form.parsley().isValid()){
 
-         console.log(dato); 
+            jQuery.ajax({
+                method: "POST",
+                url: "/save_leasing",
+                dataType: 'json',
+                data: jsonArray,
+                success: function(resp) {
+                    if (resp) {
+    
+                        console.log(resp); 
+            
+                    }
+                }
+            });
+
+
+
+
+        
+        }else{
+            return;
         }
         
-        e.preventDefault();
+     
 
         /*
         jQuery.ajax({
@@ -30,8 +53,8 @@ jQuery(document).ready(function() {
             }
         });*/
 
-        
 
+        e.preventDefault();  
     });
 
 });

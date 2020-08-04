@@ -28,11 +28,6 @@ class LeasingController extends AbstractController
     
         $params =$request->request->all();
         $em = $this->getDoctrine()->getManager();
-        
-        dump($params);
-        exit;
-
-
 
         $leasing = new Leasing();
         $leasing->setName($params['nombreempresa']);
@@ -50,7 +45,11 @@ class LeasingController extends AbstractController
             'message' => 'Procesado exitosamente'
         ];
 
-        return $this->resjson($data);
+        return new Response(
+            json_encode(array( 'response' => $data )),
+            200,
+            array('Content-Type' => 'application/json')
+        );
     }
 
 }

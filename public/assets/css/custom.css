@@ -64,8 +64,13 @@ p {
 .separadores-gris {
 border-right: 3px #485463 solid; 
 font-weight: 400; 
-color:#485463
+color:#485463;
 }
+.separadores-blancos {
+    border-right: 2px #fff solid; 
+    font-weight: 400; 
+    color:#fff;
+    }
 
 .footer-acceso {
     background-color: #384351; color:#ffffff; padding: 42px 0;
@@ -149,7 +154,9 @@ border-color:#fff;
     border: solid 1px #C12A21;
 }
 
-li{color:#C12A21}
+li {
+    color:red;
+}
 
 .faq {
     color:#4D4D4D;
@@ -299,6 +306,22 @@ li{color:#C12A21}
         .imgbanner {
             margin-top: 1%;
         } 
+        .separadores-blancos {
+            border-right: 1px #fff solid; 
+            font-weight: 400; 
+            color:#fff;
+            }
+
+            .cotizar {font-size: 12px;
+                padding: 7px 9px;
+            }
+
+            .acceso {
+                font-size:12px;
+            }
+            .online {
+                font-size:12px
+            }
 }
 @media (max-width: 320px) {
     .logo{
@@ -321,5 +344,21 @@ li{color:#C12A21}
         .top-font {
             font-size: 12px;
         }
+        .separadores-blancos {
+            border-right: 1px #fff solid; 
+            font-weight: 400; 
+            color:#fff;
+            }
+
+            .cotizar {font-size: 10px;
+                padding: 7px 5px;
+            }
+
+            .acceso {
+                font-size:9px;
+            }
+            .online {
+                font-size:10px
+            }
 }
 

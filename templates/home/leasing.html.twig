@@ -63,13 +63,12 @@ Financiamos hasta el 90% de tu inversión, en planes de 36 ó 48 cuotas.</div>
 
             <div class="shortcode-html">
               <!-- General Forms -->
-              <form class="g-brd-around  g-pa-30 g-mb-30">
+              <form data-parsley-validate id="form-leasing" name="form-leasing" class="g-brd-around  g-pa-30 g-mb-30" enctype="multipart/form-data" method="POST">  
                 <!-- Text nombre de empresa -->
                 <div class="col-md-12">
                 <div class="form-group g-mb-20">
                   <label class="g-mb-10" for="inputGroup1_1">Nombre Empresa <span style="color:#C12A21">*</span></label>
-                  <input id="inputGroup1_1" class="form-control form-control-md rounded-0" type="text" placeholder="Ingrese Nombre de Empresa">
-                  {# <small class="form-text text-muted g-font-size-default g-mt-10">.</small> #}
+                  <input type="text" id="nombreempresa" name="nombreempresa" class="form-control form-control-md rounded-0 inputGroup1_1" placeholder="Ingrese Nombre de Empresa" data-parsley-required data-parsley-minlength="3">
                 </div>
                 </div>
                 <!-- End nombre de empresa -->
@@ -77,8 +76,7 @@ Financiamos hasta el 90% de tu inversión, en planes de 36 ó 48 cuotas.</div>
                 <div class="col-md-6">
                 <div class="form-group g-mb-20">
                   <label class="g-mb-10" for="inputGroup1_1">Rut Empresa <span style="color:#C12A21">*</span></label>
-                  <input id="inputGroup1_1" class="form-control form-control-md rounded-0" type="number" placeholder="Ingrese Rut de Empresa">
-                  {# <small class="form-text text-muted g-font-size-default g-mt-10">.</small> #}
+                  <input type="text" id="rutempresa" name="rutempresa" class="form-control form-control-md rounded-0 inputGroup1_1"  placeholder="Ingrese Rut de Empresa" data-parsley-required data-parsley-minlength="3">
                 </div>
                 </div>
                 <!-- End nombre de empresa -->
@@ -88,13 +86,11 @@ Financiamos hasta el 90% de tu inversión, en planes de 36 ó 48 cuotas.</div>
                 <div class="col-md-6">
                 <div class="form-group g-mb-20">
                   <label class="g-mb-10" for="inputGroup1_1">Teléfono <span style="color:#C12A21">*</span></label>
-                  <input id="inputGroup1_1" class="form-control form-control-md rounded-0" type="number" placeholder="Ingrese Teléfono">
-                  {# <small class="form-text text-muted g-font-size-default g-mt-10">.</small> #}
+                  <input type="text" id="telefono" name="telefono" class="form-control form-control-md rounded-0 inputGroup1_1" placeholder="Ingrese Teléfono" data-parsley-required data-parsley-minlength="3">
                 </div>
                 <div class="form-group g-mb-20">
                   <label class="g-mb-10" for="inputGroup1_1">E-mail <span style="color:#C12A21">*</span></label>
-                  <input id="inputGroup1_1" class="form-control form-control-md rounded-0" type="email" placeholder="Ingrese E-mail">
-                  {# <small class="form-text text-muted g-font-size-default g-mt-10">.</small> #}
+                  <input type="email" id="email" name="email" class="form-control form-control-md rounded-0 inputGroup1_1" placeholder="Ingrese E-mail" data-parsley-required data-parsley-type="email">
                 </div>
                 </div>
                 <!-- End nombre de empresa -->
@@ -103,17 +99,14 @@ Financiamos hasta el 90% de tu inversión, en planes de 36 ó 48 cuotas.</div>
                 <!-- Textarea -->
   <div class="form-group g-mb-20">
     <label class="g-mb-10" for="inputGroup2_1">Mensaje <span style="color:#C12A21">*</span></label>
-    <textarea id="inputGroup2_1" class="form-control form-control-md g-resize-none rounded-0" rows="6" placeholder="Text area"></textarea>
-    {# <small class="form-text text-muted g-font-size-default g-mt-10">
-          
-        </small> #}
+    <textarea id="mensaje" name="mensaje" class="form-control form-control-md g-resize-none rounded-0 inputGroup1_1" rows="6" placeholder="Text area" data-parsley-required></textarea>
   </div>
   <!-- End Textarea -->
                 </div>
                 </div>
                 
                 <div class="text-center">
-                <button type="submit" class="btn btn-md u-btn-red rounded-0 g-mt-30" style="padding:10px 50px"><strong>COTIZAR</strong></button>
+                <button id="enviarleasing" type="button" class="btn btn-md u-btn-red rounded-0 g-mt-30" style="padding:10px 50px"><strong>COTIZAR</strong></button>
                 </div>
 
                <span style="color:#C12A21;font-weight:300">* Campos Obligatorios</span>

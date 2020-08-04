@@ -1,82 +1,50 @@
+jQuery(document).ready(function() {
+    
+    jQuery('#enviarcreditos').on("click", function(e) {
 
 
+        /*
+        window.ParsleyValidator.addValidator('typeFiles', {
+            validateString: function(_value, maxSize, parsleyInstance) {
+            
+            var files = parsleyInstance.$element[0].files;
+            var image = files[0];
+            var result = (/\.(jpg|jpeg|png)$/i).test(image.name);
+            return result === true;
+            },
+            messages: {
+            en: 'El archivo debe ser PNG o JPG',
+            }
+        });
 
-        /*let valor = jQuery('#form-credits input#id-credits').val();
-
-        let form = new FormData(document.getElementById("form-credits"));
-
-
-         var images = jQuery('#images')[0].files[0];
-        
-         if(images == undefined){
-
-            form.append('images', "");
-
-        }else{
-
-            form.append('images', jQuery('#images')[0].files[0]);
-        }
+        window.Parsley.addValidator('maxFileSize', {
+            validateString: function(_value, maxSize, parsleyInstance) {
+            
+            var files = parsleyInstance.$element[0].files;
+            return files.length != 1  || files[0].size <= maxSize * 1024;
+            },
+            requirementType: 'integer',
+            messages: {
+            en: 'Este archivo no debe ser mayor que %s Kb '
+            }
+        });
         */
-        //jQuery("#form-product #miniature").attr("src", "");
-
-            jQuery.ajax({
-                url: '/credits',
-                type: 'POST',
-                contentType: false,
-                data: form,
-                processData: false,
-                cache: false,
-                success: function(resp) {
-                    if (resp) {
-                        datatable.ajax.reload();
-                       
-                        
-                        jQuery('#id-modal-product').modal('hide');
-                        jQuery('#form-credits input#id-credits').val('');
-                        jQuery('#form-credits')[0].reset();
 
 
-                        if (resp.code == 200) {
-                            setTimeout(function () {
-                                toastr.options = {
-                                    closeButton: true,
-                                    progressBar: true,
-                                    showMethod: 'fadeIn',
-                                    hideMethod: 'fadeOut',
-                                    timeOut: 5000
-                                };
-                                toastr.success('Creado', resp.message);
-                            }, 100);
-                        }
+        var form = jQuery('#form-creditos');
+        form.parsley().validate();
+        
+        if (form.parsley().isValid()){
+            //product.setData(TableProduct);
 
-                        if (resp.code == 301) {
-                            setTimeout(function () {
-                                toastr.options = {
-                                    closeButton: true,
-                                    progressBar: true,
-                                    showMethod: 'fadeIn',
-                                    hideMethod: 'fadeOut',
-                                    timeOut: 5000
-                                };
-                                toastr.warning('No se Realizo', resp.message);
-                            }, 100);
-                        }
+            console.log('formulario validado'); 
 
+        }
+        
+        e.preventDefault();
+        
 
-                        if (resp.code == 400) {
+    });
 
-                            setTimeout(function () {
-                                toastr.options = {
-                                    closeButton: true,
-                                    progressBar: true,
-                                    showMethod: 'fadeIn',
-                                    hideMethod: 'fadeOut',
-                                    timeOut: 5000
-                                };
-                                toastr.danger('Error', resp.message);
-                            }, 100);
-                        }
-                    }
-                }
-            });     
+});
 

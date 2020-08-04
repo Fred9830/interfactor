@@ -2,7 +2,7 @@
 
 {% block stylesheets %}
     {{ parent() }}
-
+    <link rel="stylesheet" href=" {{ asset('assets/vendor/parsley/css/parsley.css') }} ">
 {% endblock %}
 
 
@@ -130,4 +130,6 @@ Financiamos hasta el 90% de tu inversión, en planes de 36 ó 48 cuotas.</div>
 {% endblock %}
 {% block javascripts  %}
     {{ parent() }}
+    <script src="{{ asset('assets/js/api/leasing.js') }}"></script>  
+    <script src="{{ asset('assets/vendor/parsley/js/parsley.js') }}"></script>  
 {% endblock %}

@@ -2,7 +2,7 @@
 
 {% block stylesheets %}
     {{ parent() }}
-
+    <link rel="stylesheet" href=" {{ asset('assets/vendor/parsley/css/parsley.css') }} ">
 {% endblock %}
 
 
@@ -127,13 +127,9 @@ Cuando necesitas un verdadero apoyo para impulsar tu PYME: tenemos una solución
 </div>
 {# FIN FORM #}
 
-
-
-
-
-
-
 {% endblock %}
 {% block javascripts  %}
     {{ parent() }}
+    <script src="{{ asset('assets/js/api/credits.js') }}"></script>  
+    <script src="{{ asset('assets/vendor/parsley/js/parsley.js') }}"></script>  
 {% endblock %}

@@ -2,7 +2,7 @@
 
 {% block stylesheets %}
     {{ parent() }}
-
+    <link rel="stylesheet" href=" {{ asset('assets/vendor/parsley/css/parsley.css') }} ">
 {% endblock %}
 
 
@@ -132,12 +132,9 @@ Puedes contar fácilmente con este requerimiento sin necesidad de endeudarte, a 
 {# FIN FORM #}
 
 
-
-
-
-
-
 {% endblock %}
 {% block javascripts  %}
     {{ parent() }}
+    <script src="{{ asset('assets/js/api/guarantee.js') }}"></script>  
+    <script src="{{ asset('assets/vendor/parsley/js/parsley.js') }}"></script>  
 {% endblock %}

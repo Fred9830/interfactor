@@ -2,7 +2,7 @@
 
 {% block stylesheets %}
     {{ parent() }}
-
+    <link rel="stylesheet" href=" {{ asset('assets/vendor/parsley/css/parsley.css') }} ">
 {% endblock %}
 
 
@@ -70,13 +70,13 @@ Interfactor te acompaña durante todo el proceso para que cuentes con el capital
 
             <div class="shortcode-html">
               <!-- General Forms -->
-              <form class="g-brd-around  g-pa-30 g-mb-30">
+              <form data-parsley-validate id="form-factoring" name="form-factoring" class="g-brd-around  g-pa-30 g-mb-30" enctype="multipart/form-data" method="POST">
                 <!-- Text nombre de empresa -->
                 <div class="col-md-12">
                 <div class="form-group g-mb-20">
                   <label class="g-mb-10" for="inputGroup1_1">Nombre Empresa <span style="color:#C12A21">*</span></label>
-                  <input id="inputGroup1_1" class="form-control form-control-md rounded-0" type="text" placeholder="Ingrese Nombre de Empresa">
-                  {# <small class="form-text text-muted g-font-size-default g-mt-10">.</small> #}
+                  <input  type="text" id="nombreempresa" name="nombreempresa" class="form-control form-control-md rounded-0 inputGroup1_1" placeholder="Ingrese Nombre de Empresa" data-parsley-required data-parsley-minlength="3">
+              
                 </div>
                 </div>
                 <!-- End nombre de empresa -->
@@ -84,8 +84,8 @@ Interfactor te acompaña durante todo el proceso para que cuentes con el capital
                 <div class="col-md-6">
                 <div class="form-group g-mb-20">
                   <label class="g-mb-10" for="inputGroup1_1">Rut Empresa <span style="color:#C12A21">*</span></label>
-                  <input id="inputGroup1_1" class="form-control form-control-md rounded-0" type="number" placeholder="Ingrese Rut de Empresa">
-                  {# <small class="form-text text-muted g-font-size-default g-mt-10">.</small> #}
+                  <input type="text" id="rutempresa" name="rutempresa" class="form-control form-control-md rounded-0 inputGroup1_1"  placeholder="Ingrese Rut de Empresa" data-parsley-required data-parsley-minlength="3">
+                 
                 </div>
                 </div>
                 <!-- End nombre de empresa -->
@@ -94,17 +94,17 @@ Interfactor te acompaña durante todo el proceso para que cuentes con el capital
                 <div class="col-md-6">
                 <div class="form-group g-mb-20">
                   <label class="g-mb-10" for="inputGroup1_1">Facturacion Mensual <span style="color:#C12A21">*</span></label>
-                  <input id="inputGroup1_1" class="form-control form-control-md rounded-0" type="text" placeholder="Ingrese Facturacion Mensual">
-                  {# <small class="form-text text-muted g-font-size-default g-mt-10">.</small> #}
+                  <input type="text" id="facturacion" name="facturacion" class="form-control form-control-md rounded-0 inputGroup1_1" placeholder="Ingrese Facturacion Mensual" data-parsley-required data-parsley-minlength="3">
+                 
                 </div>
                 </div>
                 <!-- End nombre de empresa -->
                  <!-- Text RUT de empresa -->
                 <div class="col-md-6">
                 <div class="form-group g-mb-20">
-                  <label class="g-mb-10" for="inputGroup1_1">Monto de Operanción <span style="color:#C12A21">*</span></label>
-                  <input id="inputGroup1_1" class="form-control form-control-md rounded-0" type="number" placeholder="Ingrese Facturacion Mensual">
-                  {# <small class="form-text text-muted g-font-size-default g-mt-10">.</small> #}
+                  <label class="g-mb-10" for="inputGroup1_1">Monto de Operación <span style="color:#C12A21">*</span></label>
+                  <input type="text" id="monto" name="monto" class="form-control form-control-md rounded-0 inputGroup1_1" placeholder="Ingrese Facturacion Mensual" data-parsley-required data-parsley-minlength="3">
+                  
                 </div>
                 </div>
                 </div>
@@ -113,8 +113,8 @@ Interfactor te acompaña durante todo el proceso para que cuentes con el capital
                 <div class="col-md-6">
                 <div class="form-group g-mb-20">
                   <label class="g-mb-10" for="inputGroup1_1">Teléfono <span style="color:#C12A21">*</span></label>
-                  <input id="inputGroup1_1" class="form-control form-control-md rounded-0" type="number" placeholder="Ingrese Teléfono">
-                  {# <small class="form-text text-muted g-font-size-default g-mt-10">.</small> #}
+                  <input type="text" id="telefono" name="telefono" class="form-control form-control-md rounded-0 inputGroup1_1" placeholder="Ingrese Teléfono" data-parsley-required data-parsley-minlength="3">
+                 
                 </div>
                 </div>
                 <!-- End nombre de empresa -->
@@ -122,8 +122,8 @@ Interfactor te acompaña durante todo el proceso para que cuentes con el capital
                 <div class="col-md-6">
                 <div class="form-group g-mb-20">
                   <label class="g-mb-10" for="inputGroup1_1">E-mail <span style="color:#C12A21">*</span></label>
-                  <input id="inputGroup1_1" class="form-control form-control-md rounded-0" type="email" placeholder="Ingrese E-mail">
-                  {# <small class="form-text text-muted g-font-size-default g-mt-10">.</small> #}
+                  <input type="email" id="email" name="email" class="form-control form-control-md rounded-0 inputGroup1_1" placeholder="Ingrese E-mail" data-parsley-required data-parsley-type="email">
+                  
                 </div>
                 </div>
                 </div>
@@ -132,8 +132,8 @@ Interfactor te acompaña durante todo el proceso para que cuentes con el capital
                 <div class="col-md-6">
                 <div class="form-group g-mb-20">
                   <label class="g-mb-10" for="inputGroup1_1">Fecha de Vencimiento </label>
-                  <input id="inputGroup1_1" class="form-control form-control-md rounded-0" type="text" placeholder="dd/mm/aaaa">
-                  {# <small class="form-text text-muted g-font-size-default g-mt-10">.</small> #}
+                  <input type="text" id="fecha" name="fecha" class="form-control form-control-md rounded-0 inputGroup1_1"  placeholder="dd/mm/aaaa" data-parsley-required data-parsley-minlength="3">
+             
                 </div>
                 </div>
                 <!-- End nombre de empresa -->
@@ -146,7 +146,7 @@ Interfactor te acompaña durante todo el proceso para que cuentes con el capital
                 <!-- Advanced File Input -->
                 <div class="form-group mb-0">
                   <label class="g-mb-10">Adjuntar Facturas</label><br>
-                  <input class="js-file-attachment" type="file" name="fileAttachment2[]">
+                  <input type="file" class="js-file-attachment" id="images" name="images" data-parsley-type-files data-parsley-max-file-size="900">
                 </div>
                 <!-- End Advanced File Input -->
 
@@ -181,6 +181,6 @@ Interfactor te acompaña durante todo el proceso para que cuentes con el capital
 {% endblock %}
 {% block javascripts  %}
     {{ parent() }}
-
-    <script src="{{ asset('js/api/factoring.js') }}"></script>  
+    <script src="{{ asset('assets/vendor/parsley/js/parsley.js') }}"></script> 
+    <script src="{{ asset('assets/js/api/factoring.js') }}"></script>  
 {% endblock %}

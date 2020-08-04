@@ -7,13 +7,11 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class GuaranteeController extends AbstractController
 {
-    /**
-     * @Route("/guarantee", name="guarantee")
+     /**
+     * @Route("/garantias", name="garantias")
      */
-    public function index()
+    public function garantias()
     {
-        return $this->render('guarantee/index.html.twig', [
-            'controller_name' => 'GuaranteeController',
-        ]);
+        return $this->render('home/garantias.html.twig');
     }
 }

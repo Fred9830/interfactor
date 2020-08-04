@@ -2,8 +2,6 @@ jQuery(document).ready(function() {
     
     jQuery('#enviarfactoring').on("click", function(e) {
 
-        console.log('entro');
-
 
         /*
         window.ParsleyValidator.addValidator('typeFiles', {
@@ -30,16 +28,21 @@ jQuery(document).ready(function() {
             en: 'Este archivo no debe ser mayor que %s Kb '
             }
         });
+        */
 
-        var form = jQuery('#form-product');
+
+        var form = jQuery('#form-factoring');
         form.parsley().validate();
         
         if (form.parsley().isValid()){
-            product.setData(TableProduct);
+            //product.setData(TableProduct);
+
+            console.log('formulario validado'); 
+
         }
         
         e.preventDefault();
-        */
+        
 
     });
 

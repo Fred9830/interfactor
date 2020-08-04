@@ -7,13 +7,11 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class CreditsController extends AbstractController
 {
-    /**
-     * @Route("/credits", name="credits")
+     /**
+     * @Route("/creditos", name="creditos")
      */
-    public function index()
+    public function creditos()
     {
-        return $this->render('credits/index.html.twig', [
-            'controller_name' => 'CreditsController',
-        ]);
+        return $this->render('home/creditos.html.twig');
     }
 }

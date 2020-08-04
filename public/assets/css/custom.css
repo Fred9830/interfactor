@@ -89,6 +89,10 @@ color:#485463
     margin: 40px 0px;
 }
 
+.inputGroup1_1, .inputGroup2_1 {
+    background: #E6E6E6;
+}
+
 #inputGroup1_1, #inputGroup2_1 {
     background: #E6E6E6;
 }

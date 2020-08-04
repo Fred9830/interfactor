@@ -10,10 +10,8 @@ class FactoringController extends AbstractController
     /**
      * @Route("/factoring", name="factoring")
      */
-    public function index()
+    public function factoring()
     {
-        return $this->render('factoring/index.html.twig', [
-            'controller_name' => 'FactoringController',
-        ]);
+        return $this->render('home/factoring.html.twig');
     }
 }

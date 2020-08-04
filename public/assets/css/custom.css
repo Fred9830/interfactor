@@ -64,8 +64,13 @@ p {
 .separadores-gris {
 border-right: 3px #485463 solid; 
 font-weight: 400; 
-color:#485463
+color:#485463;
 }
+.separadores-blancos {
+    border-right: 2px #fff solid; 
+    font-weight: 400; 
+    color:#fff;
+    }
 
 .footer-acceso {
     background-color: #384351; color:#ffffff; padding: 42px 0;
@@ -153,7 +158,9 @@ border-color:#fff;
     border: solid 1px #C12A21;
 }
 
-li{color:#C12A21}
+li {
+    color:red;
+}
 
 .faq {
     color:#4D4D4D;
@@ -284,6 +291,17 @@ li{color:#C12A21}
         font-size: 18px !important;
         top:225px !important;
         }
+        .cotizar {
+            font-size: 0.875rem;
+            padding: 7px 9px;
+        }
+
+        .acceso {
+            font-size:0.875rem
+        }
+        .online {
+            font-size:0.8755rem
+        }
 }
 @media (max-width: 375px) {
     .logo{
@@ -303,6 +321,23 @@ li{color:#C12A21}
         .imgbanner {
             margin-top: 1%;
         } 
+        .separadores-blancos {
+            border-right: 1px #fff solid; 
+            font-weight: 400; 
+            color:#fff;
+            }
+
+            .cotizar {
+                font-size: 0.75rem;
+                padding: 7px 9px;
+            }
+
+            .acceso {
+                font-size:0.75rem
+            }
+            .online {
+                font-size:0.75rem
+            }
 }
 @media (max-width: 320px) {
     .logo{
@@ -325,5 +360,21 @@ li{color:#C12A21}
         .top-font {
             font-size: 12px;
         }
+        .separadores-blancos {
+            border-right: 1px #fff solid; 
+            font-weight: 400; 
+            color:#fff;
+            }
+
+            .cotizar {font-size: 0.625rem;
+                padding: 7px 5px;
+            }
+
+            .acceso {
+                font-size:0.563rem;
+            }
+            .online {
+                font-size:0.625rem
+            }
 }
 

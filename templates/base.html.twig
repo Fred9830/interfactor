@@ -16,10 +16,7 @@
 
     <!-- CSS Global Compulsory -->
     <link rel="stylesheet" href=" {{ asset('assets/vendor/bootstrap/bootstrap.min.css') }} ">
-<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-  /> 
+
     <!-- CSS Unify -->
     <link rel="stylesheet" href=" {{ asset('assets/css/unify.css') }} ">
 	<link rel="stylesheet" href=" {{ asset('assets/css/unify-core.css') }} ">
@@ -82,9 +79,23 @@
     <script src=" {{ asset('assets/js/components/hs.header.js') }} "></script>
     <script src=" {{ asset('assets/js/helpers/hs.hamburgers.js') }} "></script>
 
+
+    <script src=" {{ asset('assets/vendor/appear.js') }} "></script>
+    <script src=" {{ asset('assets/js/components/hs.onscroll-animation.js') }} "></script>
+    
+
+              <!-- JS Plugins Init. -->
+              <script >
+                $(document).on('ready', function () {
+                  // initialization of scroll animation
+                  $.HSCore.components.HSOnScrollAnimation.init('[data-animation]');
+                });
+              </script>
+
     <!-- JS Custom -->
     <script src=" {{ asset('assets/js/custom.js') }} "></script>
 
         {% block javascripts %}{% endblock %}
     </body>
 </html>
+

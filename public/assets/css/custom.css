@@ -287,6 +287,17 @@ li {
         font-size: 18px !important;
         top:225px !important;
         }
+        .cotizar {
+            font-size: 0.875rem;
+            padding: 7px 9px;
+        }
+
+        .acceso {
+            font-size:0.875rem
+        }
+        .online {
+            font-size:0.8755rem
+        }
 }
 @media (max-width: 375px) {
     .logo{
@@ -312,15 +323,16 @@ li {
             color:#fff;
             }
 
-            .cotizar {font-size: 12px;
+            .cotizar {
+                font-size: 0.75rem;
                 padding: 7px 9px;
             }
 
             .acceso {
-                font-size:12px;
+                font-size:0.75rem
             }
             .online {
-                font-size:12px
+                font-size:0.75rem
             }
 }
 @media (max-width: 320px) {
@@ -350,15 +362,15 @@ li {
             color:#fff;
             }
 
-            .cotizar {font-size: 10px;
+            .cotizar {font-size: 0.625rem;
                 padding: 7px 5px;
             }
 
             .acceso {
-                font-size:9px;
+                font-size:0.563rem;
             }
             .online {
-                font-size:10px
+                font-size:0.625rem
             }
 }
 

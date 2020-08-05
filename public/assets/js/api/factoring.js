@@ -44,29 +44,10 @@ jQuery(document).ready(function() {
            formi.append('images', jQuery('#images')[0].files[0]);
         }
 
-        //dato = jQuery('#form-factoring').serializeArray();
-
-        
-        //var jsonArray = JSON.parse(JSON.stringify(dato));
-
         form.parsley().validate();
 
         
         if (form.parsley().isValid()){
-
-            /*
-            jQuery.ajax({
-                method: "POST",
-                url: "/save_factoring",
-                dataType: 'json',
-                data: formi,
-                success: function(resp) {
-                    if (resp) {
-                        console.log(resp); 
-            
-                    }
-                }
-            }); */
 
             $.ajax({
                 type: "POST",

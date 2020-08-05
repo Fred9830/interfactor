@@ -35,6 +35,7 @@ class LeasingController extends AbstractController
         $leasing->setPhone($params['telefono']);
         $leasing->setEmail($params['email']);
         $leasing->setMessage($params['mensaje']);
+        $leasing->setCreatedAt(new \DateTime("now"));
 
         $em->persist($leasing);
         $em->flush();

@@ -34,6 +34,7 @@ class GuaranteeController extends AbstractController
         $guarantee->setPhone($params['telefono']);
         $guarantee->setEmail($params['email']);
         $guarantee->setMessage($params['mensaje']);
+        $guarantee->setCreatedAt(new \DateTime("now"));
 
         $em->persist($guarantee);
         $em->flush();

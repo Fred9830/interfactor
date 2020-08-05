@@ -34,6 +34,7 @@ class CreditsController extends AbstractController
         $credits->setPhone($params['telefono']);
         $credits->setEmail($params['email']);
         $credits->setMessage($params['mensaje']);
+        $credits->setCreatedAt(new \DateTime("now"));
 
         $em->persist($credits);
         $em->flush();

@@ -2,7 +2,6 @@ jQuery(document).ready(function() {
     
     jQuery('#enviarfactoring').on("click", function(e) {
 
-
         /*
         window.ParsleyValidator.addValidator('typeFiles', {
             validateString: function(_value, maxSize, parsleyInstance) {
@@ -30,20 +29,34 @@ jQuery(document).ready(function() {
         });
         */
 
+       var form = jQuery('#form-factoring');
 
-        var form = jQuery('#form-factoring');
+       dato = jQuery('#form-factoring').serializeArray();
+
+       var jsonArray = JSON.parse(JSON.stringify(dato));
+
         form.parsley().validate();
         
         if (form.parsley().isValid()){
-            //product.setData(TableProduct);
-
-            console.log('formulario validado'); 
-
+            jQuery.ajax({
+                method: "POST",
+                url: "/save_factoring",
+                dataType: 'json',
+                data: jsonArray,
+                success: function(resp) {
+                    if (resp) {
+                        console.log(resp); 
+            
+                    }
+                }
+            });  
+    
+        }else{
+            return;
         }
-        
+            
         e.preventDefault();
-        
-
+    
     });
 
 });

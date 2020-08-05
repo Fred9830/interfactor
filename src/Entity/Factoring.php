@@ -55,7 +55,7 @@ class Factoring
     /**
      * @ORM\Column(type="datetime")
      */
-    private $deletedAt;
+    private $expiration;
 
     /**
      * @ORM\Column(type="string", length=100)
@@ -151,14 +151,14 @@ class Factoring
         return $this;
     }
 
-    public function getDeletedAt(): ?\DateTimeInterface
+    public function getExpiration(): ?\DateTimeInterface
     {
-        return $this->deletedAt;
+        return $this->expiration;
     }
 
-    public function setDeletedAt(\DateTimeInterface $deletedAt): self
+    public function setExpiration(\DateTimeInterface $expiration): self
     {
-        $this->deletedAt = $deletedAt;
+        $this->expiration = $expiration;
 
         return $this;
     }
@@ -174,4 +174,6 @@ class Factoring
 
         return $this;
     }
+
+    
 }

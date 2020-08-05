@@ -29,27 +29,52 @@ jQuery(document).ready(function() {
         });
         */
 
-       var form = jQuery('#form-factoring');
+        var form = jQuery('#form-factoring');
 
-       dato = jQuery('#form-factoring').serializeArray();
+        let formi = new FormData(document.getElementById("form-factoring"));
 
-       var jsonArray = JSON.parse(JSON.stringify(dato));
+        var images = jQuery('#images')[0].files[0];
+
+        if(images == undefined){
+
+           formi.append('images', "");
+
+        }else{
+
+           formi.append('images', jQuery('#images')[0].files[0]);
+        }
+
+        //dato = jQuery('#form-factoring').serializeArray();
+
+        
+        //var jsonArray = JSON.parse(JSON.stringify(dato));
 
         form.parsley().validate();
+
         
         if (form.parsley().isValid()){
+
+            /*
             jQuery.ajax({
                 method: "POST",
                 url: "/save_factoring",
                 dataType: 'json',
-                data: jsonArray,
+                data: formi,
                 success: function(resp) {
                     if (resp) {
                         console.log(resp); 
             
                     }
                 }
-            });  
+            }); */
+
+            $.ajax({
+                type: "POST",
+                url: '/save_factoring',
+                data: formi,
+                processData: false,
+                contentType: false,
+            })
     
         }else{
             return;

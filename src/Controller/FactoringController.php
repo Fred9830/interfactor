@@ -26,6 +26,7 @@ class FactoringController extends AbstractController
 
         $params =$request->request->all();
         $em = $this->getDoctrine()->getManager();
+        $file = $request->files->get('images');
 
         $factoring = new Factoring();
         $factoring->setName($params['nombreempresa']);
@@ -36,8 +37,17 @@ class FactoringController extends AbstractController
         $factoring->setEmail($params['email']);
         $factoring->setExpiration(new \DateTime(date("Y-m-d", strtotime($params['fecha']))));
         $factoring->setCreatedAt(new \DateTime("now")); 
-        $factoring->setImage('default.png'); 
 
+        if($file != null ){
+            $filename = md5(uniqid()).".".$file->getClientOriginalExtension();
+            $file->move(
+                $this->getParameter('factoring'),
+                $filename);
+        }else{
+            $filename = "default.png";
+        }
+
+        $factoring->setImage($filename);
         $em->persist($factoring);
         $em->flush();
 

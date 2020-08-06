@@ -302,13 +302,12 @@ li {
     margin: 20px;
 }
 .titulo-cuadro {
-    font-size: 40px !important;
+    font-size: 40px;
     line-height: 40px;
     margin-bottom: 20px;
 }
 .blanco {
     color: #fff;
-    font-size: 22px;
 }
 
 }
@@ -350,6 +349,16 @@ li {
             left: 0;
             height: 178px;
             width: 50%;
+            margin: 0;
+        }
+        .titulo-cuadro {
+            font-size: 30px !important;
+            line-height: 29px;
+            margin-bottom: 20px;
+        }
+        .blanco {
+            color: #fff;
+            font-size: 15px;
         }
 }
 @media (max-width: 375px) {
@@ -388,10 +397,11 @@ li {
                 font-size:0.75rem
             }
             .cuadro {
-                top: 200px;
+                top: 183px;
                 left: 0;
-                height: 140px;
+                height: 157px;
                 width: 50%;
+                margin: 0;
             }
                         
             .titulo-cuadro {
@@ -406,11 +416,12 @@ li {
 }
 @media (max-width: 360px) {
     .cuadro {
-        top: 198px;
-        left: 0;
-        height: 135px;
-        width: 50%;
-    }
+    top: 188px;
+    left: 0;
+    height: 145px;
+    width: 50%;
+    margin: 0;
+}
     .titulo-cuadro {
         font-size: 23px !important;
         line-height: 22px;
@@ -463,11 +474,7 @@ li {
     left: 0;
     height: 134px;
     width: 50%;
-            }
-            .titulo-cuadro {
-                font-size: 1.5rem;
-                line-height: 21px;
-                margin-bottom: 5px;
+    margin: 0;
             }
             .blanco {
                 color: #fff;

@@ -294,13 +294,29 @@ li {
     padding: 0 25px 0 0 ;
     left:20px;
 }
+.cuadro {
+    top: 180px;
+    left: 0;
+    height: 265px;
+    width: 35%;
+    margin: 20px;
+}
+.titulo-cuadro {
+    font-size: 40px !important;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+.blanco {
+    color: #fff;
+    font-size: 22px;
+}
 
 }
   
 
   @media (max-width: 425px) {
     .imgbanner {
-        margin-top: -7%;
+        margin-top: 5%;
     } 
     .logo{
         width: 70%;
@@ -328,6 +344,12 @@ li {
         }
         .online {
             font-size:0.8755rem
+        }
+        .cuadro {
+            top: 200px;
+            left: 0;
+            height: 178px;
+            width: 50%;
         }
 }
 @media (max-width: 375px) {
@@ -365,6 +387,39 @@ li {
             .online {
                 font-size:0.75rem
             }
+            .cuadro {
+                top: 200px;
+                left: 0;
+                height: 140px;
+                width: 50%;
+            }
+                        
+            .titulo-cuadro {
+                font-size: 27px !important;
+                line-height: 26px;
+                margin-bottom: 5px;
+            }
+            .blanco {
+                color: #fff;
+                font-size: 12px;
+            }
+}
+@media (max-width: 360px) {
+    .cuadro {
+        top: 198px;
+        left: 0;
+        height: 135px;
+        width: 50%;
+    }
+    .titulo-cuadro {
+        font-size: 23px !important;
+        line-height: 22px;
+        margin-bottom: 5px;
+    }
+    .blanco {
+        color: #fff;
+        font-size: 11px;
+    }
 }
 @media (max-width: 320px) {
     .logo{
@@ -402,6 +457,26 @@ li {
             }
             .online {
                 font-size:0.625rem
+            }
+            .cuadro {
+                top: 195px;
+    left: 0;
+    height: 134px;
+    width: 50%;
+            }
+            .titulo-cuadro {
+                font-size: 1.5rem;
+                line-height: 21px;
+                margin-bottom: 5px;
+            }
+            .blanco {
+                color: #fff;
+                font-size: 14px;
+            }
+            .titulo-cuadro {
+                font-size: 20px;
+                line-height: 20px;
+                margin-bottom: 5px;
             }
 }
 

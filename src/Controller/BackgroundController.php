@@ -22,36 +22,29 @@ class BackgroundController extends AbstractController
 
         $years = $em->getRepository(Years::class)->findAll(); 
 
+      foreach ($years as $ls => $year) {
+          $yearm[$ls] = [
+              'name' => $year->getName()
+          ];
+      }
 
 
-
-        $years = $em->getRepository(Years::class)->find($id);
-
-        if (empty($others)) {
-            $data =[
-                'status' => 'error',
-                'code' => '304',
-                'menssage' => 'No se encuentra'
-            ];
+        foreach ($years as $key => $val) {
+  
+                foreach ($val->getStatements() as $pd => $state) {
+                   
+                    $finan[$val->getName()][$pd]= [
+                        'archive' => $state->getArchive()
+                    ];
+                }
         }
-
-
-            foreach ($years->getOthers() as $key => $oth) {
-
-                $list_oth[$key]= [
-                    'id' => $oth->getId(),
-                    'name' => $oth->getName(),
-                    'archive' => $oth->getPhone()
-                ];
-            } 
-
-
+      
 
 
         
-    
         return $this->render('home/antecedentes.html.twig', [
-            'year' => $years
+            'year' => $yearm,
+            'finan' => $finan
         ]);
     }
 

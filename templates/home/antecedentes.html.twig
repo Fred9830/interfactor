@@ -34,11 +34,41 @@
   </a>
 </div>
 
-<div>
-    {% for years in year %}
-    <h2>{{ years.name }}</h2>
-    {% endfor %}
-</div>
+
+
+<seccion class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+      {% for years in year %}
+      <li>{{ years.name }}</li>
+      {% endfor %} 
+
+    </div>
+
+    <div class="col-md-6">
+      
+      {% for years in year %}       
+              {% for key, finans in finan %}
+
+                  {% if years.name == key  %}
+
+                        {% for fi in finans %}
+
+                      <p>{{fi.archive}}</p><p>{{key}}</p>
+
+                        {% endfor %}
+               
+                 {% endif %}
+
+              {% endfor %} 
+      {% endfor %} 
+
+
+
+    </div>
+  </div>
+</seccion>
+
 
 
 <div class="row" style="background:#E6E6E6">

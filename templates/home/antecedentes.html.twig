@@ -64,6 +64,42 @@
       {% endfor %} 
 
 
+      {% for years in year %}       
+      {% for uh, memorys in memory %}
+
+          {% if years.name == uh  %}
+
+                {% for me in memorys %}
+
+              <p>{{me.archive}}</p><p>{{uh}}</p>
+
+                {% endfor %}
+       
+         {% endif %}
+
+      {% endfor %} 
+      {% endfor %} 
+
+
+      {% for years in year %}       
+      {% for po, others in other %}
+
+          {% if years.name == po  %}
+
+                {% for ot in others %}
+
+              <p>{{ot.archive}}</p><p>{{po}}</p>
+
+                {% endfor %}
+       
+         {% endif %}
+
+      {% endfor %} 
+      {% endfor %} 
+
+
+
+
 
     </div>
   </div>

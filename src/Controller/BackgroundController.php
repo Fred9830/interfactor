@@ -38,13 +38,33 @@ class BackgroundController extends AbstractController
                     ];
                 }
         }
-      
 
+        foreach ($years as $uh => $old) {
+  
+            foreach ($old->getMemories() as $lm => $memory) {
+               
+                $memoyear[$old->getName()][$lm]= [
+                    'archive' => $memory->getArchive()
+                ];
+            }
+        }
 
-        
+        foreach ($years as $po => $ler) {
+  
+            foreach ($ler->getOthers() as $gg => $others) {
+               
+                $othyear[$ler->getName()][$gg]= [
+                    'archive' => $others->getArchive()
+                ];
+            }
+        }
+     
         return $this->render('home/antecedentes.html.twig', [
             'year' => $yearm,
-            'finan' => $finan
+            'finan' => $finan,
+            'memory' => $memoyear,
+            'other' => $othyear
+
         ]);
     }
 

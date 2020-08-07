@@ -22,34 +22,37 @@
     <!-- FIN BANNER -->
     <div class="container sucursales-w g-mt-2 g-py-130">
       <div class="row">
-          <div class="col-md-6 offset-md-4 g-pb-20">
-              <div class="select_region">
-                  <h2><label>REGIÓN</label></h2>
-                  <select onchange="change()" id="select_id">
-                      <option value="" selected="">Selecciona una región</option>
-                                                  <option value="1">I de Tarapacá</option>
-                                                  <option value="2">II de Antofagasta</option>
-                                                  <option value="3">III de Atacama</option>
-                                                  <option value="4">IV de Coquimbo</option>
-                                                  <option value="5">V de Valparaíso</option>
-                                                  <option value="6">VI del Libertador General Bernardo O’Higgins</option>
-                                                  <option value="7">VII del Maule</option>
-                                                  <option value="8">VIII de Concepción</option>
-                                                  <option value="9">IX de la Araucanía</option>
-                                                  <option value="10">X de Los Lagos</option>
-                                                  <option value="11">XI de Aysén del General Carlos Ibañez del Campo</option>
-                                                  <option value="12">XII de Magallanes y de la Antártica Chilena</option>
-                                                  <option value="13">Metropolitana de Santiago</option>
-                                          </select>
+        <div id="lista" class="col-12">
+          
 
+        </div>
+          <div class="col-md-6 offset-md-4 g-pb-20">
+             
+            <div class="select_region">
+                  <h2><label>REGIÓN</label></h2>
+                  <select name= "region" id="region">
+                    <option value="">Selecciona una región</option>
+                    {% for areas in area %}
+                    <option value="{{areas.id}}">{{ areas.name }}</option>
+                    {% endfor %}
               </div>
             </div>
+
+
+  
+
+
+
       </div>
       </div>
+
+
+   
 
 
 
 {% endblock %}
 {% block javascripts  %}
 {{ parent() }}
+<script src="{{ asset('assets/js/api/offices.js') }}"></script>  
 {% endblock %}

@@ -1,361 +1,422 @@
 {% extends 'base.html.twig' %}
 
 {% block stylesheets %}
-{{ parent() }}
+	{{ parent() }}
 
 {% endblock %}
 
 
 {% block body %}
 
- <!-- INICIO BANNER -->
-  <section class="g-mt-130 g-pt-50">
-                <img src=" {{ asset('assets/img/banner/banner-faq-2.jpg') }}" class="img-fluid imgbanner g-hidden-md-down" alt="Responsive image">
-        <img src=" {{ asset('assets/img/banner/banner-faq-3.jpg') }}" class="img-fluid imgbanner g-hidden-lg-up " alt="Responsive image">
+	<!-- INICIO BANNER -->
+	<section id="banner-faq">
+		<div class="g-mt-130 g-pt-50">
+			<img src=" {{ asset('assets/img/banner/banner-faq-2.jpg') }}" class="img-fluid imgbanner g-hidden-md-down" alt="Responsive image">
+			<img src=" {{ asset('assets/img/banner/banner-faq-3.jpg') }}" class="img-fluid imgbanner g-hidden-lg-up " alt="Responsive image">
 
-        <div class="cuadro" data-animation="bounceInLeft" data-animation-delay="0" data-animation-duration="1000">
-       <div style="padding:28px"> 
-       <p class="titulo-cuadro blanco">PREGUNTAS<br>FRECUENTES</p>
-        <strong class="blanco"></strong>
-        </div>
-        </div>
-
+			<div class="cuadro" data-animation="bounceInLeft" data-animation-delay="0" data-animation-duration="1000">
+				<div style="padding:28px">
+					<p class="titulo-cuadro blanco">PREGUNTAS<br>FRECUENTES</p>
+					<strong class="blanco"></strong>
+				</div>
+			</div>
+		<div>
   </section>
-    <!-- FIN BANNER -->
-
-<div class="row">
-<div class="col-md-6 offset-md-4 g-pb-20 g-pt-40">
-<p><strong class="g-px-20;" style="font-weight:900;" >INFORMACIÓN GENERAL</strong></p>
-
-
-                  <div class="shortcode-html">
-                    <div id="accordion-08" class="u-accordion u-accordion-color-primary g-pt-10" role="tablist" aria-multiselectable="false">
-                     <!-- Card -->
-                      <div class="card g-rounded-30 g-overflow-hidden g-brd-none mb-2">
-                        <div id="accordion-08-heading-01" class="u-accordion__header g-pa-0" role="tab">
-                          <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
-                            <a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-01" data-toggle="collapse" data-parent="#accordion-08" aria-expanded="false" aria-controls="accordion-08-body-02">
-                              
-                              <span class="g-px-20 g-width-600">
-                                <p><li><span class="faq">¿Todas las empresas pueden acceder al factoring?</span></li></p>
-                              </span>
-                              <span class="u-accordion__control-icon g-brd-gray-light-v4   text-center g-pa-20">
-                                <i class="fa fa-plus"></i>
-                                <i class="fa fa-minus"></i>
-                              </span>
-                            </a>
-                          </h5>
-                        </div>
-                        <div id="accordion-08-body-01" class="collapse" role="tabpanel" aria-labelledby="accordion-08-heading-01" data-parent="#accordion-08">
-                          <div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
-                            <p>La empresa de factoring realiza un análisis financiero al cliente y su pagador, y en base a una estructura de parámetros crediticios se determina la viabilidad de la operación.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- End Card -->
-
-                      <!-- Card -->
-                      <div class="card g-rounded-30 g-overflow-hidden g-brd-none mb-2">
-                        <div id="accordion-08-heading-02" class="u-accordion__header g-pa-0" role="tab">
-                          <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
-                            <a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-02" data-toggle="collapse" data-parent="#accordion-08" aria-expanded="false" aria-controls="accordion-08-body-02">
-                              <span class="g-px-20 g-width-600">
-                             <p><li><span class="faq">¿Cuánto cuesta el servicio?</span></li></p>
-                              </span>
-                                <span class="u-accordion__control-icon g-brd-gray-light-v4   text-center g-pa-20">
-                                <i class="fa fa-plus"></i>
-                                <i class="fa fa-minus"></i>
-                              </span>
-                            </a>
-                          </h5>
-                        </div>
-                        <div id="accordion-08-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-08-heading-02" data-parent="#accordion-08">
-                          <div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
-                            El costo es resultado del análisis de las variables de riesgo de la operación, como son cliente, pagador, tipo de operación, plazo a financiar entre otros.
-                          </div>
-                        </div>
-                      </div>
-                      <!-- End Card -->
-
-                       <!-- Card -->
-                      <div class="card g-rounded-30 g-overflow-hidden g-brd-none mb-2">
-                        <div id="accordion-08-heading-03" class="u-accordion__header g-pa-0" role="tab">
-                          <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
-                            <a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-03" data-toggle="collapse" data-parent="#accordion-08" aria-expanded="false" aria-controls="accordion-08-body-03">
-                              <span class="g-px-20 g-width-600">
-                             <p><li><span class="faq">¿Tiene algún costo solamente cotizar?</span></li></p>
-                              </span>
-                                <span class="u-accordion__control-icon g-brd-gray-light-v4   text-center g-pa-20">
-                                <i class="fa fa-plus"></i>
-                                <i class="fa fa-minus"></i>
-                              </span>
-                            </a>
-                          </h5>
-                        </div>
-                        <div id="accordion-08-body-03" class="collapse" role="tabpanel" aria-labelledby="accordion-08-heading-03" data-parent="#accordion-08">
-                          <div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
-                            El cotizar no tiene ningún costo. Comunícate con nosotros al +56 2 26549080 o al mail soportecomercial@interfactor.cl y un ejecutivo especialista te contactará.
-                          </div>
-                        </div>
-                      </div>
-                      <!-- End Card -->
-                       <!-- Card -->
-                      <div class="card g-rounded-30 g-overflow-hidden g-brd-none mb-2">
-                        <div id="accordion-08-heading-04" class="u-accordion__header g-pa-0" role="tab">
-                          <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
-                            <a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-04" data-toggle="collapse" data-parent="#accordion-08" aria-expanded="false" aria-controls="accordion-08-body-04">
-                              <span class="g-px-20 g-width-600">
-                             <p><li><span class="faq">¿Qué ventajas tiene trabajar con un factoring?</span></li></p>
-                              </span>
-                                <span class="u-accordion__control-icon g-brd-gray-light-v4   text-center g-pa-20">
-                                <i class="fa fa-plus"></i>
-                                <i class="fa fa-minus"></i>
-                              </span>
-                            </a>
-                          </h5>
-                        </div>
-                        <div id="accordion-08-body-04" class="collapse" role="tabpanel" aria-labelledby="accordion-08-heading-04" data-parent="#accordion-08">
-                          <div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
-                            La deuda no figura en el Sistema Financiero por lo tanto no limita la capacidad de la empresa de buscar otros tipos de financiamiento.<br>
-Es especialmente ventajoso para empresas que no cuentan con departamentos de cobranza y recaudación ya que esta tarea es delegada en el Factoring.
-                          </div>
-                        </div>
-                      </div>
-                      <!-- End Card -->
-                    </div>
-                  </div>
-                
-</div>
-<div class="col-md-6 offset-md-4 g-pb-20">
-<p><strong class="g-px-20" style="font-weight:900;" >SOBRE NUESTRO PORTAL</strong></p>
+			<!-- FIN BANNER -->
+<section id="acordion-faq">
+			<div class="row">
+				<div class="col-md-6 offset-md-4 g-pb-20 g-pt-40">
+					<p>
+						<strong class="g-px-20;" style="font-weight:900;">INFORMACIÓN GENERAL</strong>
+					</p>
 
 
-                  <div class="shortcode-html">
-                    <div id="accordion-08" class="u-accordion u-accordion-color-primary g-pt-10" role="tablist" aria-multiselectable="false">
-                     <!-- Card -->
-                      <div class="card g-rounded-30 g-overflow-hidden g-brd-none mb-2">
-                        <div id="accordion-08-heading-01" class="u-accordion__header g-pa-0" role="tab">
-                          <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
-                            <a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-01" data-toggle="collapse" data-parent="#accordion-08" aria-expanded="false" aria-controls="accordion-08-body-02">
-                              
-                              <span class="g-px-20 g-width-600">
-                                <p><li><span class="faq">¿Cómo obtener la clave para acceder a la página de Interfactor?</span></li></p>
-                              </span>
-                              <span class="u-accordion__control-icon g-brd-gray-light-v4   text-center g-pa-20">
-                                <i class="fa fa-plus"></i>
-                                <i class="fa fa-minus"></i>
-                              </span>
-                            </a>
-                          </h5>
-                        </div>
-                        <div id="accordion-08-body-01" class="collapse" role="tabpanel" aria-labelledby="accordion-08-heading-01" data-parent="#accordion-08">
-                          <div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
-                            <p>Debes registrarte en portal www.interfactor.cl en el botón “Hazte Cliente”.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- End Card -->
+					<div class="shortcode-html">
+						<div
+							id="accordion-08" class="u-accordion u-accordion-color-primary g-pt-10" role="tablist" aria-multiselectable="false">
+							<!-- Card -->
+							<div class="card g-rounded-30 g-overflow-hidden g-brd-none mb-2">
+								<div id="accordion-08-heading-01" class="u-accordion__header g-pa-0" role="tab">
+									<h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
+										<a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-01" data-toggle="collapse" data-parent="#accordion-08" aria-expanded="false" aria-controls="accordion-08-body-02">
 
-                      <!-- Card -->
-                      <div class="card g-rounded-30 g-overflow-hidden g-brd-none mb-2">
-                        <div id="accordion-08-heading-02" class="u-accordion__header g-pa-0" role="tab">
-                          <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
-                            <a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-02" data-toggle="collapse" data-parent="#accordion-08" aria-expanded="false" aria-controls="accordion-08-body-02">
-                              <span class="g-px-20 g-width-600">
-                             <p><li><span class="faq">¿Cómo recuperar la clave para acceder a la página de Interfactor?</span></li></p>
-                              </span>
-                                <span class="u-accordion__control-icon g-brd-gray-light-v4   text-center g-pa-20">
-                                <i class="fa fa-plus"></i>
-                                <i class="fa fa-minus"></i>
-                              </span>
-                            </a>
-                          </h5>
-                        </div>
-                        <div id="accordion-08-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-08-heading-02" data-parent="#accordion-08">
-                          <div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
-                            Dentro del portal www.interfactor.cl debes hacer click en el botón “Recuperar Clave”. Se abrirá una ventana donde debes ingresar el Rut de tu empresa y se te enviará la clave al correo registrado.
-                          </div>
-                        </div>
-                      </div>
-                      <!-- End Card -->
+											<span class="g-px-20 g-width-600">
+												<p>
+													<li>
+														<span class="faq">¿Todas las empresas pueden acceder al factoring?</span>
+													</li>
+												</p>
+											</span>
+											<span class="u-accordion__control-icon g-brd-gray-light-v4   text-center g-pa-20">
+												<i class="fa fa-plus"></i>
+												<i class="fa fa-minus"></i>
+											</span>
+										</a>
+									</h5>
+								</div>
+								<div id="accordion-08-body-01" class="collapse" role="tabpanel" aria-labelledby="accordion-08-heading-01" data-parent="#accordion-08">
+									<div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
+										<p>La empresa de factoring realiza un análisis financiero al cliente y su pagador, y en base a una estructura de parámetros crediticios se determina la viabilidad de la operación.</p>
+									</div>
+								</div>
+							</div>
+							<!-- End Card -->
 
-                       <!-- Card -->
-                      <div class="card g-rounded-30 g-overflow-hidden g-brd-none mb-2">
-                        <div id="accordion-08-heading-03" class="u-accordion__header g-pa-0" role="tab">
-                          <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
-                            <a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-03" data-toggle="collapse" data-parent="#accordion-08" aria-expanded="false" aria-controls="accordion-08-body-03">
-                              <span class="g-px-20 g-width-600">
-                             <p><li><span class="faq">¿Qué información puedo revisar a través del portal?</span></li></p>
-                              </span>
-                                <span class="u-accordion__control-icon g-brd-gray-light-v4   text-center g-pa-20">
-                                <i class="fa fa-plus"></i>
-                                <i class="fa fa-minus"></i>
-                              </span>
-                            </a>
-                          </h5>
-                        </div>
-                        <div id="accordion-08-body-03" class="collapse" role="tabpanel" aria-labelledby="accordion-08-heading-03" data-parent="#accordion-08">
-                          <div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
-                            Puede revisar historial de sus operaciones, cartera vigente, morosa, excedentes, así como el estado de la cobranza de los documentos cedidos a Interfactor.
-                          </div>
-                        </div>
-                      </div>
-                      <!-- End Card -->
-                      
-                      
-                      
-                    </div>
-                  </div>
-       </div>
-<div class="col-md-6 offset-md-4 g-pb-20">
-<p><strong class="g-px-20"  style="font-weight:900;">OPERACIONES Y OTROS</strong></p>
+							<!-- Card -->
+							<div class="card g-rounded-30 g-overflow-hidden g-brd-none mb-2">
+								<div id="accordion-08-heading-02" class="u-accordion__header g-pa-0" role="tab">
+									<h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
+										<a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-02" data-toggle="collapse" data-parent="#accordion-08" aria-expanded="false" aria-controls="accordion-08-body-02">
+											<span class="g-px-20 g-width-600">
+												<p>
+													<li>
+														<span class="faq">¿Cuánto cuesta el servicio?</span>
+													</li>
+												</p>
+											</span>
+											<span class="u-accordion__control-icon g-brd-gray-light-v4   text-center g-pa-20">
+												<i class="fa fa-plus"></i>
+												<i class="fa fa-minus"></i>
+											</span>
+										</a>
+									</h5>
+								</div>
+								<div id="accordion-08-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-08-heading-02" data-parent="#accordion-08">
+									<div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
+										El costo es resultado del análisis de las variables de riesgo de la operación, como son cliente, pagador, tipo de operación, plazo a financiar entre otros.
+									</div>
+								</div>
+							</div>
+							<!-- End Card -->
 
+							<!-- Card -->
+							<div class="card g-rounded-30 g-overflow-hidden g-brd-none mb-2">
+								<div id="accordion-08-heading-03" class="u-accordion__header g-pa-0" role="tab">
+									<h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
+										<a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-03" data-toggle="collapse" data-parent="#accordion-08" aria-expanded="false" aria-controls="accordion-08-body-03">
+											<span class="g-px-20 g-width-600">
+												<p>
+													<li>
+														<span class="faq">¿Tiene algún costo solamente cotizar?</span>
+													</li>
+												</p>
+											</span>
+											<span class="u-accordion__control-icon g-brd-gray-light-v4   text-center g-pa-20">
+												<i class="fa fa-plus"></i>
+												<i class="fa fa-minus"></i>
+											</span>
+										</a>
+									</h5>
+								</div>
+								<div id="accordion-08-body-03" class="collapse" role="tabpanel" aria-labelledby="accordion-08-heading-03" data-parent="#accordion-08">
+									<div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
+										El cotizar no tiene ningún costo. Comunícate con nosotros al +56 2 26549080 o al mail soportecomercial@interfactor.cl y un ejecutivo especialista te contactará.
+									</div>
+								</div>
+							</div>
+							<!-- End Card -->
+							<!-- Card -->
+							<div class="card g-rounded-30 g-overflow-hidden g-brd-none mb-2">
+								<div id="accordion-08-heading-04" class="u-accordion__header g-pa-0" role="tab">
+									<h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
+										<a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-04" data-toggle="collapse" data-parent="#accordion-08" aria-expanded="false" aria-controls="accordion-08-body-04">
+											<span class="g-px-20 g-width-600">
+												<p>
+													<li>
+														<span class="faq">¿Qué ventajas tiene trabajar con un factoring?</span>
+													</li>
+												</p>
+											</span>
+											<span class="u-accordion__control-icon g-brd-gray-light-v4   text-center g-pa-20">
+												<i class="fa fa-plus"></i>
+												<i class="fa fa-minus"></i>
+											</span>
+										</a>
+									</h5>
+								</div>
+								<div id="accordion-08-body-04" class="collapse" role="tabpanel" aria-labelledby="accordion-08-heading-04" data-parent="#accordion-08">
+									<div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
+										La deuda no figura en el Sistema Financiero por lo tanto no limita la capacidad de la empresa de buscar otros tipos de financiamiento.<br>
+										Es especialmente ventajoso para empresas que no cuentan con departamentos de cobranza y recaudación ya que esta tarea es delegada en el Factoring.
+									</div>
+								</div>
+							</div>
+							<!-- End Card -->
+						</div>
+					</div>
 
-                  <div class="shortcode-html">
-                    <div id="accordion-08" class="u-accordion u-accordion-color-primary g-pt-10" role="tablist" aria-multiselectable="false">
-                     <!-- Card -->
-                      <div class="card g-rounded-30 g-overflow-hidden g-brd-none mb-2">
-                        <div id="accordion-08-heading-01" class="u-accordion__header g-pa-0" role="tab">
-                          <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
-                            <a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-01" data-toggle="collapse" data-parent="#accordion-08" aria-expanded="false" aria-controls="accordion-08-body-02">
-                              
-                              <span class="g-px-20 g-width-600">
-                                <p><li><span class="faq">¿Cómo cedo mis facturas?</span></li></p>
-                              </span>
-                              <span class="u-accordion__control-icon g-brd-gray-light-v4   text-center g-pa-20">
-                                <i class="fa fa-plus"></i>
-                                <i class="fa fa-minus"></i>
-                              </span>
-                            </a>
-                          </h5>
-                        </div>
-                        <div id="accordion-08-body-01" class="collapse" role="tabpanel" aria-labelledby="accordion-08-heading-01" data-parent="#accordion-08">
-                          <div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
-                            <p>Debes ingresar en el acceso clientes del portal www.interfactor.cl y hacer click en el botón Cesión de Facturas. Debes contar con tu Certificado Digital y los XML de tus facturas (XML corresponde al archivo que representa una factura).</p>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- End Card -->
-
-                      <!-- Card -->
-                      <div class="card g-rounded-30 g-overflow-hidden g-brd-none mb-2">
-                        <div id="accordion-08-heading-02" class="u-accordion__header g-pa-0" role="tab">
-                          <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
-                            <a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-02" data-toggle="collapse" data-parent="#accordion-08" aria-expanded="false" aria-controls="accordion-08-body-02">
-                              <span class="g-px-20 g-width-600">
-                             <p><li><span class="faq">¿Cómo obtengo mi Certificado Digital?</span></li></p>
-                              </span>
-                                <span class="u-accordion__control-icon g-brd-gray-light-v4   text-center g-pa-20">
-                                <i class="fa fa-plus"></i>
-                                <i class="fa fa-minus"></i>
-                              </span>
-                            </a>
-                          </h5>
-                        </div>
-                        <div id="accordion-08-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-08-heading-02" data-parent="#accordion-08">
-                          <div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
-                            Debe comprarlo en forma particular a alguna de las empresas proveedoras de Certificados Digitales.
-                          </div>
-                        </div>
-                      </div>
-                      <!-- End Card -->
-
-                       <!-- Card -->
-                      <div class="card g-rounded-30 g-overflow-hidden g-brd-none mb-2">
-                        <div id="accordion-08-heading-03" class="u-accordion__header g-pa-0" role="tab">
-                          <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
-                            <a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-03" data-toggle="collapse" data-parent="#accordion-08" aria-expanded="false" aria-controls="accordion-08-body-03">
-                              <span class="g-px-20 g-width-600">
-                             <p><li><span class="faq">¿Cómo obtengo mi carpeta tributaria?</span></li></p>
-                              </span>
-                                <span class="u-accordion__control-icon g-brd-gray-light-v4   text-center g-pa-20">
-                                <i class="fa fa-plus"></i>
-                                <i class="fa fa-minus"></i>
-                              </span>
-                            </a>
-                          </h5>
-                        </div>
-                        <div id="accordion-08-body-03" class="collapse" role="tabpanel" aria-labelledby="accordion-08-heading-03" data-parent="#accordion-08">
-                          <div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
-                            Ingresando a la página www.sii.cl con tu rut y clave. Luego debes seguir los pasos del Siguiente Instructivo.
-                          </div>
-                        </div>
-                      </div>
-                      <!-- End Card -->
-                       <!-- Card -->
-                      <div class="card g-rounded-30 g-overflow-hidden g-brd-none mb-2">
-                        <div id="accordion-08-heading-04" class="u-accordion__header g-pa-0" role="tab">
-                          <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
-                            <a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-04" data-toggle="collapse" data-parent="#accordion-08" aria-expanded="false" aria-controls="accordion-08-body-04">
-                              <span class="g-px-20 g-width-600">
-                             <p><li><span class="faq">¿Cómo y cuándo se genera la factura por concepto de gastos y comisiones?</span></li></p>
-                              </span>
-                                <span class="u-accordion__control-icon g-brd-gray-light-v4   text-center g-pa-20">
-                                <i class="fa fa-plus"></i>
-                                <i class="fa fa-minus"></i>
-                              </span>
-                            </a>
-                          </h5>
-                        </div>
-                        <div id="accordion-08-body-04" class="collapse" role="tabpanel" aria-labelledby="accordion-08-heading-04" data-parent="#accordion-08">
-                          <div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
-                            La Factura se genera dentro de los 5 primeros días hábiles por el total de operaciones del mes anterior.
-                          </div>
-                        </div>
-                      </div>
-                      <!-- End Card -->
-                       <!-- Card -->
-                      <div class="card g-rounded-30 g-overflow-hidden g-brd-none mb-2">
-                        <div id="accordion-08-heading-04" class="u-accordion__header g-pa-0" role="tab">
-                          <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
-                            <a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-04" data-toggle="collapse" data-parent="#accordion-08" aria-expanded="false" aria-controls="accordion-08-body-04">
-                              <span class="g-px-20 g-width-600">
-                             <p><li><span class="faq">¿Los gastos y comisiones incluyen iva?</span></li></p>
-                              </span>
-                                <span class="u-accordion__control-icon g-brd-gray-light-v4   text-center g-pa-20">
-                                <i class="fa fa-plus"></i>
-                                <i class="fa fa-minus"></i>
-                              </span>
-                            </a>
-                          </h5>
-                        </div>
-                        <div id="accordion-08-body-04" class="collapse" role="tabpanel" aria-labelledby="accordion-08-heading-04" data-parent="#accordion-08">
-                          <div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
-                            Sí, incluyen IVA.
-                          </div>
-                        </div>
-                      </div>
-                      <!-- End Card -->
-                       <!-- Card -->
-                      <div class="card g-rounded-30 g-overflow-hidden g-brd-none mb-2">
-                        <div id="accordion-08-heading-04" class="u-accordion__header g-pa-0" role="tab">
-                          <h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
-                            <a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-04" data-toggle="collapse" data-parent="#accordion-08" aria-expanded="false" aria-controls="accordion-08-body-04">
-                              <span class="g-px-20 g-width-600">
-                             <p><li><span class="faq">¿Cómo obtengo las facturas de gastos y comisiones de operaciones realizadas anteriormente?</span></li></p>
-                              </span>
-                                <span class="u-accordion__control-icon g-brd-gray-light-v4   text-center g-pa-20">
-                                <i class="fa fa-plus"></i>
-                                <i class="fa fa-minus"></i>
-                              </span>
-                            </a>
-                          </h5>
-                        </div>
-                        <div id="accordion-08-body-04" class="collapse" role="tabpanel" aria-labelledby="accordion-08-heading-04" data-parent="#accordion-08">
-                          <div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
-                            Ingresando en el acceso clientes del portal www.interfactor.cl , haz click en Acceso a Información de Operaciones y luego en la sección Facturas.
-                          </div>
-                        </div>
-                      </div>
-                      <!-- End Card -->
-         
-</div>
-</div>
-</div>
+				</div>
+				<div class="col-md-6 offset-md-4 g-pb-20">
+					<p>
+						<strong class="g-px-20" style="font-weight:900;">SOBRE NUESTRO PORTAL</strong>
+					</p>
 
 
+					<div class="shortcode-html">
+						<div
+							id="accordion-08" class="u-accordion u-accordion-color-primary g-pt-10" role="tablist" aria-multiselectable="false">
+							<!-- Card -->
+							<div class="card g-rounded-30 g-overflow-hidden g-brd-none mb-2">
+								<div id="accordion-08-heading-01" class="u-accordion__header g-pa-0" role="tab">
+									<h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
+										<a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-01" data-toggle="collapse" data-parent="#accordion-08" aria-expanded="false" aria-controls="accordion-08-body-02">
 
-{% endblock %}
-{% block javascripts  %}
-{{ parent() }}
-{% endblock %}
+											<span class="g-px-20 g-width-600">
+												<p>
+													<li>
+														<span class="faq">¿Cómo obtener la clave para acceder a la página de Interfactor?</span>
+													</li>
+												</p>
+											</span>
+											<span class="u-accordion__control-icon g-brd-gray-light-v4   text-center g-pa-20">
+												<i class="fa fa-plus"></i>
+												<i class="fa fa-minus"></i>
+											</span>
+										</a>
+									</h5>
+								</div>
+								<div id="accordion-08-body-01" class="collapse" role="tabpanel" aria-labelledby="accordion-08-heading-01" data-parent="#accordion-08">
+									<div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
+										<p>Debes registrarte en portal www.interfactor.cl en el botón “Hazte Cliente”.</p>
+									</div>
+								</div>
+							</div>
+							<!-- End Card -->
+
+							<!-- Card -->
+							<div class="card g-rounded-30 g-overflow-hidden g-brd-none mb-2">
+								<div id="accordion-08-heading-02" class="u-accordion__header g-pa-0" role="tab">
+									<h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
+										<a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-02" data-toggle="collapse" data-parent="#accordion-08" aria-expanded="false" aria-controls="accordion-08-body-02">
+											<span class="g-px-20 g-width-600">
+												<p>
+													<li>
+														<span class="faq">¿Cómo recuperar la clave para acceder a la página de Interfactor?</span>
+													</li>
+												</p>
+											</span>
+											<span class="u-accordion__control-icon g-brd-gray-light-v4   text-center g-pa-20">
+												<i class="fa fa-plus"></i>
+												<i class="fa fa-minus"></i>
+											</span>
+										</a>
+									</h5>
+								</div>
+								<div id="accordion-08-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-08-heading-02" data-parent="#accordion-08">
+									<div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
+										Dentro del portal www.interfactor.cl debes hacer click en el botón “Recuperar Clave”. Se abrirá una ventana donde debes ingresar el Rut de tu empresa y se te enviará la clave al correo registrado.
+									</div>
+								</div>
+							</div>
+							<!-- End Card -->
+
+							<!-- Card -->
+							<div class="card g-rounded-30 g-overflow-hidden g-brd-none mb-2">
+								<div id="accordion-08-heading-03" class="u-accordion__header g-pa-0" role="tab">
+									<h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
+										<a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-03" data-toggle="collapse" data-parent="#accordion-08" aria-expanded="false" aria-controls="accordion-08-body-03">
+											<span class="g-px-20 g-width-600">
+												<p>
+													<li>
+														<span class="faq">¿Qué información puedo revisar a través del portal?</span>
+													</li>
+												</p>
+											</span>
+											<span class="u-accordion__control-icon g-brd-gray-light-v4   text-center g-pa-20">
+												<i class="fa fa-plus"></i>
+												<i class="fa fa-minus"></i>
+											</span>
+										</a>
+									</h5>
+								</div>
+								<div id="accordion-08-body-03" class="collapse" role="tabpanel" aria-labelledby="accordion-08-heading-03" data-parent="#accordion-08">
+									<div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
+										Puede revisar historial de sus operaciones, cartera vigente, morosa, excedentes, así como el estado de la cobranza de los documentos cedidos a Interfactor.
+									</div>
+								</div>
+							</div>
+							<!-- End Card -->
+
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 offset-md-4 g-pb-20">
+					<p>
+						<strong class="g-px-20" style="font-weight:900;">OPERACIONES Y OTROS</strong>
+					</p>
+
+
+					<div class="shortcode-html">
+						<div
+							id="accordion-08" class="u-accordion u-accordion-color-primary g-pt-10" role="tablist" aria-multiselectable="false">
+							<!-- Card -->
+							<div class="card g-rounded-30 g-overflow-hidden g-brd-none mb-2">
+								<div id="accordion-08-heading-01" class="u-accordion__header g-pa-0" role="tab">
+									<h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
+										<a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-01" data-toggle="collapse" data-parent="#accordion-08" aria-expanded="false" aria-controls="accordion-08-body-02">
+
+											<span class="g-px-20 g-width-600">
+												<p>
+													<li>
+														<span class="faq">¿Cómo cedo mis facturas?</span>
+													</li>
+												</p>
+											</span>
+											<span class="u-accordion__control-icon g-brd-gray-light-v4   text-center g-pa-20">
+												<i class="fa fa-plus"></i>
+												<i class="fa fa-minus"></i>
+											</span>
+										</a>
+									</h5>
+								</div>
+								<div id="accordion-08-body-01" class="collapse" role="tabpanel" aria-labelledby="accordion-08-heading-01" data-parent="#accordion-08">
+									<div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
+										<p>Debes ingresar en el acceso clientes del portal www.interfactor.cl y hacer click en el botón Cesión de Facturas. Debes contar con tu Certificado Digital y los XML de tus facturas (XML corresponde al archivo que representa una factura).</p>
+									</div>
+								</div>
+							</div>
+							<!-- End Card -->
+
+							<!-- Card -->
+							<div class="card g-rounded-30 g-overflow-hidden g-brd-none mb-2">
+								<div id="accordion-08-heading-02" class="u-accordion__header g-pa-0" role="tab">
+									<h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
+										<a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-02" data-toggle="collapse" data-parent="#accordion-08" aria-expanded="false" aria-controls="accordion-08-body-02">
+											<span class="g-px-20 g-width-600">
+												<p>
+													<li>
+														<span class="faq">¿Cómo obtengo mi Certificado Digital?</span>
+													</li>
+												</p>
+											</span>
+											<span class="u-accordion__control-icon g-brd-gray-light-v4   text-center g-pa-20">
+												<i class="fa fa-plus"></i>
+												<i class="fa fa-minus"></i>
+											</span>
+										</a>
+									</h5>
+								</div>
+								<div id="accordion-08-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-08-heading-02" data-parent="#accordion-08">
+									<div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
+										Debe comprarlo en forma particular a alguna de las empresas proveedoras de Certificados Digitales.
+									</div>
+								</div>
+							</div>
+							<!-- End Card -->
+
+							<!-- Card -->
+							<div class="card g-rounded-30 g-overflow-hidden g-brd-none mb-2">
+								<div id="accordion-08-heading-03" class="u-accordion__header g-pa-0" role="tab">
+									<h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
+										<a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-03" data-toggle="collapse" data-parent="#accordion-08" aria-expanded="false" aria-controls="accordion-08-body-03">
+											<span class="g-px-20 g-width-600">
+												<p>
+													<li>
+														<span class="faq">¿Cómo obtengo mi carpeta tributaria?</span>
+													</li>
+												</p>
+											</span>
+											<span class="u-accordion__control-icon g-brd-gray-light-v4   text-center g-pa-20">
+												<i class="fa fa-plus"></i>
+												<i class="fa fa-minus"></i>
+											</span>
+										</a>
+									</h5>
+								</div>
+								<div id="accordion-08-body-03" class="collapse" role="tabpanel" aria-labelledby="accordion-08-heading-03" data-parent="#accordion-08">
+									<div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
+										Ingresando a la página www.sii.cl con tu rut y clave. Luego debes seguir los pasos del Siguiente Instructivo.
+									</div>
+								</div>
+							</div>
+							<!-- End Card -->
+							<!-- Card -->
+							<div class="card g-rounded-30 g-overflow-hidden g-brd-none mb-2">
+								<div id="accordion-08-heading-04" class="u-accordion__header g-pa-0" role="tab">
+									<h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
+										<a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-04" data-toggle="collapse" data-parent="#accordion-08" aria-expanded="false" aria-controls="accordion-08-body-04">
+											<span class="g-px-20 g-width-600">
+												<p>
+													<li>
+														<span class="faq">¿Cómo y cuándo se genera la factura por concepto de gastos y comisiones?</span>
+													</li>
+												</p>
+											</span>
+											<span class="u-accordion__control-icon g-brd-gray-light-v4   text-center g-pa-20">
+												<i class="fa fa-plus"></i>
+												<i class="fa fa-minus"></i>
+											</span>
+										</a>
+									</h5>
+								</div>
+								<div id="accordion-08-body-04" class="collapse" role="tabpanel" aria-labelledby="accordion-08-heading-04" data-parent="#accordion-08">
+									<div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
+										La Factura se genera dentro de los 5 primeros días hábiles por el total de operaciones del mes anterior.
+									</div>
+								</div>
+							</div>
+							<!-- End Card -->
+							<!-- Card -->
+							<div class="card g-rounded-30 g-overflow-hidden g-brd-none mb-2">
+								<div id="accordion-08-heading-05" class="u-accordion__header g-pa-0" role="tab">
+									<h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
+										<a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-05" data-toggle="collapse" data-parent="#accordion-08" aria-expanded="false" aria-controls="accordion-08-body-05">
+											<span class="g-px-20 g-width-600">
+												<p>
+													<li>
+														<span class="faq">¿Los gastos y comisiones incluyen iva?</span>
+													</li>
+												</p>
+											</span>
+											<span class="u-accordion__control-icon g-brd-gray-light-v4   text-center g-pa-20">
+												<i class="fa fa-plus"></i>
+												<i class="fa fa-minus"></i>
+											</span>
+										</a>
+									</h5>
+								</div>
+								<div id="accordion-08-body-05" class="collapse" role="tabpanel" aria-labelledby="accordion-08-heading-05" data-parent="#accordion-08">
+									<div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
+										Sí, incluyen IVA.
+									</div>
+								</div>
+							</div>
+							<!-- End Card -->
+							<!-- Card -->
+							<div class="card g-rounded-30 g-overflow-hidden g-brd-none mb-2">
+								<div id="accordion-08-heading-06" class="u-accordion__header g-pa-0" role="tab">
+									<h5 class="mb-0 text-uppercase g-font-size-default g-font-weight-700 g-pa-20a mb-0">
+										<a class="collapsed d-flex g-color-main g-text-underline--none--hover" href="#accordion-08-body-06" data-toggle="collapse" data-parent="#accordion-08" aria-expanded="false" aria-controls="accordion-08-body-06">
+											<span class="g-px-20 g-width-600">
+												<p>
+													<li>
+														<span class="faq">¿Cómo obtengo las facturas de gastos y comisiones de operaciones realizadas anteriormente?</span>
+													</li>
+												</p>
+											</span>
+											<span class="u-accordion__control-icon g-brd-gray-light-v4   text-center g-pa-20">
+												<i class="fa fa-plus"></i>
+												<i class="fa fa-minus"></i>
+											</span>
+										</a>
+									</h5>
+								</div>
+								<div id="accordion-08-body-06" class="collapse" role="tabpanel" aria-labelledby="accordion-08-heading-06" data-parent="#accordion-08">
+									<div class="u-accordion__body g-bg-gray-light-v5 g-px-50 g-py-30">
+										Ingresando en el acceso clientes del portal www.interfactor.cl , haz click en Acceso a Información de Operaciones y luego en la sección Facturas.
+									</div>
+								</div>
+							</div>
+							<!-- End Card -->
+
+						</div>
+					</div>
+				</div>
+      </div>
+      </section>
+
+			{% endblock %}
+			{% block javascripts  %}
+				{{ parent() }}
+			{% endblock %}

@@ -1,268 +1,166 @@
-{% extends 'base.html.twig' %}     
+{% extends 'base.html.twig' %}
 
 {% block stylesheets %}
-    {{ parent() }}
+	{{ parent() }}
 
 {% endblock %}
 
 
 {% block body %}
 
-{# SLIDER #}
-<div id="rev_slider_1083_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="background-color: transparent; padding: 0; margin: 0 auto;"
-           data-alias="travel"
-           data-source="gallery">
-        <div id="rev_slider_1083_1" class="rev_slider fullwidthabanner" style="display: none;"
-             data-version="5.4.1">
-          <ul>
-            <li data-index="rs-3070"
-                data-transition="parallaxhorizontal"
-                data-slotamount="default"
-                data-hideafterloop="0"
-                data-hideslideonmobile="off"
-                data-easein="default"
-                data-easeout="default"
-                data-masterspeed="default"
-                data-thumb="assets/img/travel1-100x50.jpg"
-                data-rotate="0"
-                data-fstransition="fade"
-                data-fsmasterspeed="1500"
-                data-fsslotamount="7"
-                data-saveperformance="off"
-                data-title="Number One">
-              <img class="rev-slidebg" src="{{ asset('assets/img/banner/banner-index.jpg') }}" alt="Image description"
-                   data-bgposition="center center"
-                   data-bgfit="cover"
-                   data-bgrepeat="no-repeat"
-                   data-bgparallax="10">
-            </li>
-            <li data-index="rs-3071"
-                data-transition="parallaxhorizontal"
-                data-slotamount="default"
-                data-hideafterloop="0"
-                data-hideslideonmobile="off"
-                data-easein="default"
-                data-easeout="default"
-                data-masterspeed="default"
-                data-thumb="assets/img/travel2-100x50.jpg"
-                data-rotate="0"
-                data-saveperformance="off"
-                data-title="Number Two">
-              <img class="rev-slidebg" src="{{ asset('assets/img/banner/banner-index.jpg') }}" alt="Image description"
-                   data-bgposition="center center"
-                   data-bgfit="cover"
-                   data-bgrepeat="no-repeat"
-                   data-bgparallax="10">
-            </li>
-            <li data-index="rs-3072"
-                data-transition="parallaxhorizontal"
-                data-slotamount="default"
-                data-hideafterloop="0"
-                data-hideslideonmobile="off"
-                data-easein="default"
-                data-easeout="default"
-                data-masterspeed="default"
-                data-thumb="assets/img/travel3-100x50.jpg"
-                data-rotate="0"
-                data-saveperformance="off"
-                data-title="Number Three">
-              <img class="rev-slidebg" src="{{ asset('assets/img/banner/banner-index.jpg') }}" alt="Image description"
-                   data-bgposition="center center"
-                   data-bgfit="cover"
-                   data-bgrepeat="no-repeat"
-                   data-bgparallax="10">
-            </li>
-            <li data-index="rs-3073"
-                data-transition="parallaxhorizontal"
-                data-slotamount="default"
-                data-hideafterloop="0"
-                data-hideslideonmobile="off"
-                data-easein="default"
-                data-easeout="default"
-                data-masterspeed="default"
-                data-thumb="assets/img/travel4-100x50.jpg"
-                data-rotate="0"
-                data-saveperformance="off"
-                data-title="Number Four">
-              <img class="rev-slidebg" src="{{ asset('assets/img/banner/banner-index.jpg') }}" alt="Image description"
-                   data-bgposition="center center"
-                   data-bgfit="cover"
-                   data-bgrepeat="no-repeat"
-                   data-bgparallax="10">
-            </li>
-          </ul>
+	{# SLIDER #}
+	<div id="rev_slider_1083_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="background-color: transparent; padding: 0; margin: 0 auto;" data-alias="travel" data-source="gallery">
+		<div id="rev_slider_1083_1" class="rev_slider fullwidthabanner" style="display: none;" data-version="5.4.1">
+			<ul>
+				<li data-index="rs-3070" data-transition="parallaxhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="assets/img/travel1-100x50.jpg" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Number One">
+					<img class="rev-slidebg" src="{{ asset('assets/img/banner/banner-index.jpg') }}" alt="Image description" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10">
+				</li>
+				<li data-index="rs-3071" data-transition="parallaxhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="assets/img/travel2-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Number Two">
+					<img class="rev-slidebg" src="{{ asset('assets/img/banner/banner-index.jpg') }}" alt="Image description" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10">
+				</li>
+				<li data-index="rs-3072" data-transition="parallaxhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="assets/img/travel3-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Number Three">
+					<img class="rev-slidebg" src="{{ asset('assets/img/banner/banner-index.jpg') }}" alt="Image description" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10">
+				</li>
+				<li data-index="rs-3073" data-transition="parallaxhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="assets/img/travel4-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Number Four">
+					<img class="rev-slidebg" src="{{ asset('assets/img/banner/banner-index.jpg') }}" alt="Image description" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10">
+				</li>
+			</ul>
 
-          
 
-            <!-- LAYER NR. 2 -->
-            <div id="slider-1083-layer-2" class="tp-caption Travel-SmallCaption tp-resizeme tp-static-layer" style="z-index: 6; white-space: nowrap;"
-                 data-x="['left','left','left','left']"
-                 data-y="['top','top','top','top']"
-                 data-hoffset="['90','90','60','40']"
-                 data-voffset="['353','313','263','203']"
-                 data-fontsize="['25','25','25','20']"
-                 data-lineheight="['30','30','30','20']"
-                 data-width="none"
-                 data-height="none"
-                 data-whitespace="nowrap"
-                 data-type="text"
-                 data-responsive_offset="on"
-                 data-startslide="0"
-                 data-endslide="3"
-                 data-frames='[
-                   {"from":"opacity:0;","speed":300,"to":"o:1;","delay":500,"ease":"Power2.easeInOut"},
-                   {"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}
-                 ]'
-                 data-textAlign="['left','left','left','left']"
-                 data-paddingtop="[0,0,0,0]"
-                 data-paddingright="[0,0,0,0]"
-                 data-paddingbottom="[0,0,0,0]"
-                 data-paddingleft="[0,0,0,0]">Travel with us today at a discount rate.
-            </div>
+			<!-- LAYER NR. 2 -->
+			<div id="slider-1083-layer-2" class="tp-caption Travel-SmallCaption tp-resizeme tp-static-layer" style="z-index: 6; white-space: nowrap;" data-x="['left','left','left','left']" data-y="['top','top','top','top']" data-hoffset="['90','90','60','40']" data-voffset="['353','313','263','203']" data-fontsize="['25','25','25','20']" data-lineheight="['30','30','30','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-startslide="0" data-endslide="3" data-frames='[
+				                   {"from":"opacity:0;","speed":300,"to":"o:1;","delay":500,"ease":"Power2.easeInOut"},
+				                   {"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}
+				                 ]' data-textalign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">Travel with us today at a discount rate.
+			</div>
 
-            <!-- LAYER NR. 3 -->
-            <div id="slider-1083-layer-3" class="tp-caption Travel-CallToAction rev-btn tp-static-layer" style="z-index: 7; white-space: nowrap; outline: none; box-shadow: none; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; cursor: pointer;"
-                 data-x="['left','left','left','left']"
-                 data-y="['top','top','top','top']"
-                 data-hoffset="['90','90','60','40']"
-                 data-voffset="['416','376','326','251']"
-                 data-width="none"
-                 data-height="none"
-                 data-whitespace="nowrap"
-                 data-type="button"
-                 data-actions='[
-                   {"event":"click","action":"scrollbelow","offset":"px"}
-                 ]'
-                 data-responsive_offset="on"
-                 data-responsive="off"
-                 data-startslide="0"
-                 data-endslide="3"
-                 data-frames='[
-                   {"from":"opacity:0;","speed":300,"to":"o:1;","delay":500,"ease":"Power2.easeInOut"},
-                   {"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"},
-                   {"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255, 255, 255, 1);bg:rgba(255, 255, 255, .15);bw:2px 2px 2px 2px;"}
-                 ]'
-                 data-textAlign="['left','left','left','left']"
-                 data-paddingtop="[12,12,12,12]"
-                 data-paddingright="[20,20,20,20]"
-                 data-paddingbottom="[12,12,12,12]"
-                 data-paddingleft="[20,20,20,20]">Click Here
-              <i class="fa fa-long-arrow-right" style="margin-left: 10px;"></i>
-            </div>
-          </div>
+			<!-- LAYER NR. 3 -->
+			<div id="slider-1083-layer-3" class="tp-caption Travel-CallToAction rev-btn tp-static-layer" style="z-index: 7; white-space: nowrap; outline: none; box-shadow: none; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; cursor: pointer;" data-x="['left','left','left','left']" data-y="['top','top','top','top']" data-hoffset="['90','90','60','40']" data-voffset="['416','376','326','251']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="button" data-actions='[
+				                   {"event":"click","action":"scrollbelow","offset":"px"}
+				                 ]' data-responsive_offset="on" data-responsive="off" data-startslide="0" data-endslide="3" data-frames='[
+				                   {"from":"opacity:0;","speed":300,"to":"o:1;","delay":500,"ease":"Power2.easeInOut"},
+				                   {"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"},
+				                   {"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255, 255, 255, 1);bg:rgba(255, 255, 255, .15);bw:2px 2px 2px 2px;"}
+				                 ]' data-textalign="['left','left','left','left']" data-paddingtop="[12,12,12,12]" data-paddingright="[20,20,20,20]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[20,20,20,20]">Click Here
+				<i class="fa fa-long-arrow-right" style="margin-left: 10px;"></i>
+			</div>
+		</div>
 
-          <div class="tp-bannertimer tp-bottom" style="height: 7px; background-color: rgba(255, 255, 255, .25);"></div>
-        </div>
-      </div>
+		<div class="tp-bannertimer tp-bottom" style="height: 7px; background-color: rgba(255, 255, 255, .25);"></div>
+	</div>
+</div>
 
 {# fin slider #}
 
 
+<!-- INICIO BANNER -->
+<section id="slider">
+	<div class="g-pt-170 g-py-50">
+		<img src=" {{ asset('assets/img/banner/banner-index-1.jpg') }}" class="img-fluid imgbanner" alt="Responsive image">
+
+	</div>
+</section>
+<!-- FIN BANNER -->
+<!-- SECCION ICONOS -->
+<seccion id="iconos">
+	<div class="container">
+		<div class="col-md-12">
+			<div class="text-center g-mb-30">
+				<h2>
+					<span style="font-weight: 300;">¿Por qué</span>
+					<strong>
+						elegirnos?</strong>
+				</h2>
+			</div>
+		</div>
+		<div class="shortcode-html">
 
 
+			<div class="row">
+				<div
+					class="col-lg-3 g-mb-10">
+					<!-- icono1 -->
+					<div class="media g-mb-15">
+						<div class="d-flex mr-4">
+							<span class="g-color-gray-dark-v4 g-font-size-26">
+								<img src=" {{ asset('assets/img/iconos/ruta.jpg') }}">
+							</span>
+						</div>
+						<div class="media-body g-px-20" style="border-left: solid 1px #777777;">
+							<h3 class="h5 g-color-black mb-20">Más de una década de trayectoria</h3>
+							<p class="g-color-gray-dark-v4">Contamos con un equipo con experiencia para entregar soluciones a tu medida.</p>
+							<!-- <a class="g-font-weight-600 g-font-size-12 g-text-underline--none--hover text-uppercase" href="#">Learn More</a> -->
+						</div>
+					</div>
+					<!-- fin icono 1-->
+				</div>
+				<!-- icono2 -->
+				<div class="col-lg-3 g-mb-10">
 
-    <!-- INICIO BANNER -->
-  <section class="g-pt-170 g-py-50">
-        <img src=" {{ asset('assets/img/banner/banner-index-1.jpg') }}" class="img-fluid imgbanner" alt="Responsive image">
+					<div class="media g-mb-15">
+						<div class="d-flex mr-4">
+							<span class="g-color-gray-dark-v4 g-font-size-26">
+								<img src=" {{ asset('assets/img/iconos/persona.jpg') }}">
+							</span>
+						</div>
+						<div class="media-body g-px-20" style="border-left: solid 1px #777777;">
+							<h3 class="h5 g-color-black mb-20">Portal de clientes
+								<br><br></h3>
+							<p class="g-color-gray-dark-v4">Ten acceso a toda la información de tus operaciones y procesa tus facturas online.</p>
+							<!-- <a class="g-font-weight-600 g-font-size-12 g-text-underline--none--hover text-uppercase" href="#">Learn More</a> -->
+						</div>
+					</div>
 
-  </section>
-    <!-- FIN BANNER -->
-    <!-- SECCION ICONOS -->
+				</div>
+				<!-- fin icono 2-->
 
-    <div class="container">
-      <div class="text-center g-mb-30">
-        <h2><span style="font-weight: 300;">¿Por qué</span><strong> elegirnos?</strong></h2>
-      </div>
-    <div class="shortcode-html">
-      
-      
-      <div class="row">
-        <div class="col-lg-3 g-mb-10">
-         <!-- icono1 -->
-          <div class="media g-mb-15">
-            <div class="d-flex mr-4">
-              <span class="g-color-gray-dark-v4 g-font-size-26">
-                <img src=" {{ asset('assets/img/iconos/ruta.jpg') }}">
-              </span>
-            </div>
-            <div class="media-body g-px-20" style="border-left: solid 1px #777777;">
-              <h3 class="h5 g-color-black mb-20">Más de una década de trayectoria</h3>
-              <p class="g-color-gray-dark-v4">Contamos con un equipo con experiencia para entregar soluciones a tu medida.</p>
-              <!-- <a class="g-font-weight-600 g-font-size-12 g-text-underline--none--hover text-uppercase" href="#">Learn More</a> -->
-            </div>
-          </div>
-          <!-- fin icono 1-->
-        </div>
-<!-- icono2 -->
-        <div class="col-lg-3 g-mb-10">
-         
-          <div class="media g-mb-15">
-            <div class="d-flex mr-4">
-              <span class="g-color-gray-dark-v4 g-font-size-26">
-                <img src=" {{ asset('assets/img/iconos/persona.jpg') }}">
-              </span>
-            </div>
-            <div class="media-body g-px-20" style="border-left: solid 1px #777777;">
-              <h3 class="h5 g-color-black mb-20">Portal de clientes <br><br></h3>
-              <p class="g-color-gray-dark-v4">Ten acceso a toda la información de tus operaciones y procesa tus facturas online.</p>
-              <!-- <a class="g-font-weight-600 g-font-size-12 g-text-underline--none--hover text-uppercase" href="#">Learn More</a> -->
-            </div>
-          </div>
-         
-        </div>
-                  <!-- fin icono 2-->
+				<!-- icono 3 -->
+				<div class="col-lg-3 g-mb-10">
 
-<!-- icono 3 -->
-        <div class="col-lg-3 g-mb-10">
+					<div class="media g-mb-15">
+						<div class="d-flex mr-4">
+							<span class="g-color-gray-dark-v4 g-font-size-26">
+								<img src=" {{ asset('assets/img/iconos/place.jpg') }}">
+							</span>
+						</div>
+						<div class="media-body g-px-20" style="border-left: solid 1px #777777;">
+							<h3 class="h5 g-color-black mb-20">Presentes en 13 regiones de Chile</h3>
+							<p class="g-color-gray-dark-v4">Estamos cerca de nuestros clientes dónde y cuándo nos necesiten.<br><br></p>
+							<!-- <a class="g-font-weight-600 g-font-size-12 g-text-underline--none--hover text-uppercase" href="#">Learn More</a> -->
+						</div>
+					</div>
+				</div>
+				<!-- fin icono 3-->
 
-          <div class="media g-mb-15">
-            <div class="d-flex mr-4">
-              <span class="g-color-gray-dark-v4 g-font-size-26">
-                <img src=" {{ asset('assets/img/iconos/place.jpg') }}">
-              </span>
-            </div>
-            <div class="media-body g-px-20" style="border-left: solid 1px #777777;">
-              <h3 class="h5 g-color-black mb-20">Presentes en 13 regiones de Chile</h3>
-              <p class="g-color-gray-dark-v4">Estamos cerca de nuestros clientes dónde y cuándo nos necesiten.<br><br></p>
-              <!-- <a class="g-font-weight-600 g-font-size-12 g-text-underline--none--hover text-uppercase" href="#">Learn More</a> -->
-            </div>
-          </div>
-        </div>
-                  <!-- fin icono 3-->
+				<!-- icono 4-->
+				<div class="col-lg-3 g-mb-10">
 
-          <!-- icono 4-->
-          <div class="col-lg-3 g-mb-10">
-          
-          <div class="media g-mb-15">
-            <div class="d-flex mr-4">
-              <span class="g-color-gray-dark-v4 g-font-size-26">
-                <img src=" {{ asset('assets/img/iconos/procesos.jpg') }}">
-              </span>
-            </div>
-            <div class="media-body g-px-20" style="border-left: solid 1px #777777;">
-              <h3 class="h5 g-color-black mb-20">Procesos ágiles sin interrupciones</h3>
-              <p class="g-color-gray-dark-v4">Reduce el tiempo de giro de tu dinero cediendo a través de nuestro portal.<br><br></p>
-              <!-- <a class="g-font-weight-600 g-font-size-12 g-text-underline--none--hover text-uppercase" href="#">Learn More</a> -->
-            </div>
-          </div>
-          <!-- fin icono 4-->
-        </div>
-      </div>
-     
-    </div>
-    </div>
-      
-    </div>
-    <!-- Fin seccion iconos-->
-<!-- TESTIMONIOS   -->
-    <section class="g-pt-30">
-      <img src=" {{ asset('assets/img/banner/testimonios.jpg') }}" class="img-fluid" alt="Responsive image">
+					<div class="media g-mb-15">
+						<div class="d-flex mr-4">
+							<span class="g-color-gray-dark-v4 g-font-size-26">
+								<img src=" {{ asset('assets/img/iconos/procesos.jpg') }}">
+							</span>
+						</div>
+						<div class="media-body g-px-20" style="border-left: solid 1px #777777;">
+							<h3 class="h5 g-color-black mb-20">Procesos ágiles sin interrupciones</h3>
+							<p class="g-color-gray-dark-v4">Reduce el tiempo de giro de tu dinero cediendo a través de nuestro portal.<br><br></p>
+							<!-- <a class="g-font-weight-600 g-font-size-12 g-text-underline--none--hover text-uppercase" href="#">Learn More</a> -->
+						</div>
+					</div>
+					<!-- fin icono 4-->
+				</div>
+			</div>
+
+		</div>
+	</div>
 
 </section>
-<!-- FIN TESTIMINIOS -->
-
-
-{% endblock %}
-{% block javascripts  %}
-    {{ parent() }}
-{% endblock %}
+<!-- Fin seccion iconos-->
+<!-- TESTIMONIOS   -->
+<section id="testimonios">
+	<div class="g-pt-30">
+		<img src=" {{ asset('assets/img/banner/testimonios.jpg') }}" class="img-fluid" alt="Responsive image">
+	</div>
+</section>
+<!-- FIN TESTIMINIOS -->{% endblock %}{% block javascripts  %}
+{{ parent() }}{% endblock %}

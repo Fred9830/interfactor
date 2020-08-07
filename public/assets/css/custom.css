@@ -279,6 +279,14 @@ li {
         width: 100%;
     margin: 0 0 0 12%
     }
+    .footer-soporte2 {
+        background-color: #485463;
+        color: #ffffff;
+        padding: 30px 10px 20px 14px;
+    }    .logo{
+        width: 100%;
+    margin: 0 0 0 45%
+    }
    
 
   }

@@ -1,28 +1,30 @@
 {% extends 'base.html.twig' %}
 
 {% block stylesheets %}
-{{ parent() }}
+	{{ parent() }}
 
 {% endblock %}
 
 
 {% block body %}
 
- <!-- INICIO BANNER -->
-  <section class="g-mt-130 g-py-50">
-        <img src=" {{ asset('assets/img/banner/banner-sucursales-1.jpg') }}" class="img-fluid imgbanner" alt="Responsive image">
-        <div class="cuadro" data-animation="bounceInLeft" data-animation-delay="0" data-animation-duration="1000">
-       <div style="padding:28px"> 
-       <p class="titulo-cuadro blanco">SUCURSALES</p>
-        <strong class="blanco"></strong>
-        </div>
-        </div>
+	<!-- INICIO BANNER -->
+	<section id="banner.sucursales">
+		<div class="g-mt-130 g-py-50">
+			<img src=" {{ asset('assets/img/banner/banner-sucursales-1.jpg') }}" class="img-fluid imgbanner" alt="Responsive image">
+			<div class="cuadro" data-animation="bounceInLeft" data-animation-delay="0" data-animation-duration="1000">
+				<div style="padding:28px">
+					<p class="titulo-cuadro blanco">SUCURSALES</p>
+					<strong class="blanco"></strong>
+				</div>
+			</div>
+		</div>
 
-  </section>
-    <!-- FIN BANNER -->
+	</section>
+	<!-- FIN BANNER -->
 
 
 {% endblock %}
 {% block javascripts  %}
-{{ parent() }}
+	{{ parent() }}
 {% endblock %}

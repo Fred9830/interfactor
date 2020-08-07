@@ -1,199 +1,247 @@
 {% extends 'base.html.twig' %}
 
 {% block stylesheets %}
-{{ parent() }}
+	{{ parent() }}
 
 {% endblock %}
 
 
 {% block body %}
-<body style="background:#E6E6E6">
+	<body
+		style="background:#E6E6E6">
 
- <!-- INICIO BANNER -->
-  <section class="g-mt-130 g-pt-50">
-              <img src=" {{ asset('assets/img/banner/banner-empresa-3.jpg') }}" class="img-fluid imgbanner g-hidden-md-down" alt="Responsive image">
-        <img src=" {{ asset('assets/img/banner/banner-empresa-4.jpg') }}" class="img-fluid imgbanner g-hidden-lg-up " alt="Responsive image">
-        <div class="cuadro" data-animation="bounceInLeft" data-animation-delay="0" data-animation-duration="1000">
-       <div  class="padding-cuadro"> 
-       <p class="titulo-cuadro blanco">EMPRESA</p>
-        <strong class="blanco">MÁS DE UNA DÉCADA DE<BR>EXPERIENCIA PARA RESPALDAR<BR>TU CONFIANZA.</strong>
-        </div>
-        </div>
+		<!-- INICIO BANNER -->
+		<section id="banner-antecedentes">
+			<div class="g-mt-130 g-pt-50">
+				<img src=" {{ asset('assets/img/banner/banner-empresa-3.jpg') }}" class="img-fluid imgbanner g-hidden-md-down" alt="Responsive image">
+				<img src=" {{ asset('assets/img/banner/banner-empresa-4.jpg') }}" class="img-fluid imgbanner g-hidden-lg-up " alt="Responsive image">
+				<div class="cuadro" data-animation="bounceInLeft" data-animation-delay="0" data-animation-duration="1000">
+					<div class="padding-cuadro">
+						<p class="titulo-cuadro blanco">EMPRESA</p>
+						<strong class="blanco">MÁS DE UNA DÉCADA DE<BR>EXPERIENCIA PARA RESPALDAR<BR>TU CONFIANZA.</strong>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- FIN BANNER -->
 
-  </section>
-    <!-- FIN BANNER -->
+		{# INICIO TEXTO #}
+		<section id="nav-alt">
+			<div class="col-md-4 offset-md-8 g-mb-40 g-pt-40" style="background:#E6E6E6">
 
-{# INICIO TEXTO #}
-<div class="col-md-4 offset-md-8 g-mb-40 g-pt-40" style="background:#E6E6E6">
+				<a href="/empresa">
+					<span class="g-px-10">NOSOTROS</span>
+					<span class="sr-only">(current')</span>
+					<span class="separadores-rojos2"></span>
+				</a>
+				<a href="/antecedentes">
+					<span class="g-px-10">
+						<strong>ANTECEDENTES FINANCIEROS</strong>
+					</span>
 
-    <a href="/empresa"> <span class="g-px-10">NOSOTROS</span>
-    <span class="sr-only">(current')</span>
-<span class="separadores-rojos2"></span>
-  </a>
-  <a href="/antecedentes"><span class="g-px-10"><strong>ANTECEDENTES FINANCIEROS</strong></span>
+				</a>
+			</div>
+		</section>
 
-  </a>
-</div>
-
-<div class="row" style="background:#E6E6E6">
-  <div class="col-md-6 offset-md-4 g-pb-20">
-
-<div class="accordion" id="accordionExample">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h2 class="mb-0">
-        <a class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          ESTADOS FINANCIEROS
-        </a>
-      </h2>
-    </div>
-
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-
-
-
-
-
+		<section id="texto-antecedenes">
+			<div class="row" style="background:#E6E6E6">
+				<div class="col-md-6 offset-md-4 g-pb-20">
 {# ACORDEON ESTADOS FINANCIEROS #}
+					<div class="accordion" id="accordionExample">
+						<div class="card">
+							<div class="card-header" id="headingOne">
+								<h2 class="mb-0">
+									<a class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										ESTADOS FINANCIEROS
+									</a>
+								</h2>
+							</div>
 
-      
-                <div class="shortcode-html">
-                  <div id="accordion-01" role="tablist" aria-multiselectable="true">
-                    <!-- Card -->
-                    <div class="card g-mb-5">
-                      <div id="accordion-01-heading-01" class="card-header" role="tab">
-                        <h5 class="mb-0">
-                          <a class="d-block u-link-v5 g-color-main g-color-primary--hover" href="#accordion-01-body-01" data-toggle="collapse" data-parent="#accordion-01" aria-expanded="true" aria-controls="accordion-01-body-01">
-                          2018
-                          </a>
-                        </h5>
-                      </div>
-                      <div id="accordion-01-body-01" class="collapse show" role="tabpanel" aria-labelledby="accordion-01-heading-01" data-parent="#accordion-01">
-                        <div class="card-block">
-                         <div class="row">
-                          <div class="col-md-4 g-my-20"><a href="#"><i class="fa fa-file-pdf-o fa-2x"></i> <span style="font-weight:300;position: relative;top: -4px;left: 4px;">Dicmebre 2018</span></div>
-                          <div class="col-md-4 g-my-20"><a href="#"><i class="fa fa-file-pdf-o fa-2x"></i> <span style="font-weight:300;position: relative;top: -4px;left: 4px;">Septiembre 2018</span></div>
-                          <div class="col-md-4 g-my-20"><a href="#"><i class="fa fa-file-pdf-o fa-2x"></i> <span style="font-weight:300;position: relative;top: -4px;left: 4px;">Junio 2018</span></div>
-                          <div class="col-md-4 g-my-20"><a href="#"><i class="fa fa-file-pdf-o fa-2x"></i> <span style="font-weight:300;position: relative;top: -4px;left: 4px;">Mayo 2018</span></div>
-                          <div class="col-md-4 g-my-20"><a href="#"><i class="fa fa-file-pdf-o fa-2x"></i> <span style="font-weight:300;position: relative;top: -4px;left: 4px;">Febrero 2018</span></div>
-                         </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End Card -->
+							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+								<div
+									class="card-body">
 
-                    <!-- Card -->
-                    <div class="card g-mb-5">
-                      <div id="accordion-01-heading-02" class="card-header" role="tab">
-                        <h5 class="mb-0">
-                          <a class="collapsed d-block u-link-v5 g-color-main g-color-primary--hover" href="#accordion-01-body-02" data-toggle="collapse" data-parent="#accordion-01" aria-expanded="false" aria-controls="accordion-01-body-02">
-                          2017
-                          </a>
-                        </h5>
-                      </div>
-                      <div id="accordion-01-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-01-heading-02" data-parent="#accordion-01">
-                        <div class="card-block">
-                          <div class="row">
-                          <div class="col-md-4 g-my-20"><a href="#"><i class="fa fa-file-pdf-o fa-2x"></i> <span style="font-weight:300;position: relative;top: -4px;left: 4px;">Dicmebre 2017</span></div>
-                          <div class="col-md-4 g-my-20"><a href="#"><i class="fa fa-file-pdf-o fa-2x"></i> <span style="font-weight:300;position: relative;top: -4px;left: 4px;">Septiembre 2017</span></div>
-                          <div class="col-md-4 g-my-20"><a href="#"><i class="fa fa-file-pdf-o fa-2x"></i> <span style="font-weight:300;position: relative;top: -4px;left: 4px;">Junio 2017</span></div>
-                          <div class="col-md-4 g-my-20"><a href="#"><i class="fa fa-file-pdf-o fa-2x"></i> <span style="font-weight:300;position: relative;top: -4px;left: 4px;">Mayo 2017</span></div>
-                          <div class="col-md-4 g-my-20"><a href="#"><i class="fa fa-file-pdf-o fa-2x"></i> <span style="font-weight:300;position: relative;top: -4px;left: 4px;">Febrero 2017</span></div>
-                         </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End Card -->
 
-                    <!-- Card -->
-                    <div class="card g-mb-5">
-                      <div id="accordion-01-heading-03" class="card-header" role="tab">
-                        <h5 class="mb-0">
-                          <a class="collapsed d-block u-link-v5 g-color-main g-color-primary--hover" href="#accordion-01-body-03" data-toggle="collapse" data-parent="#accordion-01" aria-expanded="false" aria-controls="accordion-01-body-03">
-                          2016
-                          </a>
-                        </h5>
-                      </div>
-                      <div id="accordion-01-body-03" class="collapse" role="tabpanel" aria-labelledby="accordion-01-heading-03" data-parent="#accordion-01">
-                        <div class="card-block">
-                          <div class="row">
-                          <div class="col-md-4 g-my-20"><a href="#"><i class="fa fa-file-pdf-o fa-2x"></i> <span style="font-weight:300;position: relative;top: -4px;left: 4px;">Dicmebre 2016</span></div>
-                          <div class="col-md-4 g-my-20"><a href="#"><i class="fa fa-file-pdf-o fa-2x"></i> <span style="font-weight:300;position: relative;top: -4px;left: 4px;">Septiembre 2016</span></div>
-                          <div class="col-md-4 g-my-20"><a href="#"><i class="fa fa-file-pdf-o fa-2x"></i> <span style="font-weight:300;position: relative;top: -4px;left: 4px;">Junio 2016</span></div>
-                          <div class="col-md-4 g-my-20"><a href="#"><i class="fa fa-file-pdf-o fa-2x"></i> <span style="font-weight:300;position: relative;top: -4px;left: 4px;">Mayo 2016</span></div>
-                          <div class="col-md-4 g-my-20"><a href="#"><i class="fa fa-file-pdf-o fa-2x"></i> <span style="font-weight:300;position: relative;top: -4px;left: 4px;">Febrero 2016</span></div>
-                         </div>
+									
+
+
+									<div class="shortcode-html">
+										<div
+											id="accordion-01" role="tablist" aria-multiselectable="true">
+											<!-- Card -->
+											<div class="card g-mb-5">
+												<div id="accordion-01-heading-01" class="card-header" role="tab">
+													<h5 class="mb-0">
+														<a class="d-block u-link-v5 g-color-main g-color-primary--hover" href="#accordion-01-body-01" data-toggle="collapse" data-parent="#accordion-01" aria-expanded="true" aria-controls="accordion-01-body-01">
+															2018
+														</a>
+													</h5>
+												</div>
+												<div id="accordion-01-body-01" class="collapse show" role="tabpanel" aria-labelledby="accordion-01-heading-01" data-parent="#accordion-01">
+													<div class="card-block">
+														<div class="row">
+															    <div class="col-md-4 g-my-20">
+																    <a href="#">
+                                    <i class="fa fa-file-pdf-o fa-2x"></i>
+                                    <span style="font-weight:300;position: relative;top: -4px;left: 4px;">Dicmebre 2018</span>
+																  </div>
+																  <div class="col-md-4 g-my-20">
+																	  <a href="#">
+																		<i class="fa fa-file-pdf-o fa-2x"></i>
+																		<span style="font-weight:300;position: relative;top: -4px;left: 4px;">Septiembre 2018</span>
+																	</div>
+																	<div class="col-md-4 g-my-20">
+																		<a href="#">
+																			<i class="fa fa-file-pdf-o fa-2x"></i>
+																			<span style="font-weight:300;position: relative;top: -4px;left: 4px;">Junio 2018</span>
+																	</div>
+																	<div class="col-md-4 g-my-20">
+																			<a href="#">
+																				<i class="fa fa-file-pdf-o fa-2x"></i>
+																				<span style="font-weight:300;position: relative;top: -4px;left: 4px;">Mayo 2018</span>
+																	 </div>
+																	<div class="col-md-4 g-my-20">
+																				<a href="#">
+																					<i class="fa fa-file-pdf-o fa-2x"></i>
+																			<span style="font-weight:300;position: relative;top: -4px;left: 4px;">Febrero 2018</span>
+																	 </div>
+                              </div>
+													</div>
+												</div>
+											</div>
+																<!-- End Card -->
+
+                      <!-- Card -->
+                      <div class="card g-mb-5">
+                        <div id="accordion-01-heading-02" class="card-header" role="tab">
+                          <h5 class="mb-0">
+                            <a class="collapsed d-block u-link-v5 g-color-main g-color-primary--hover" href="#accordion-01-body-02" data-toggle="collapse" data-parent="#accordion-01" aria-expanded="false" aria-controls="accordion-01-body-02">
+                              2017
+                            </a>
+                          </h5>
                         </div>
-                      </div>
-                    </div>
-                    <!-- End Card -->
-                  </div>
+                        <div id="accordion-01-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-01-heading-02" data-parent="#accordion-01">
+                          <div class="card-block">
+                            <div class="row">
+                              <div class="col-md-4 g-my-20">
+                                <a href="#">
+                                  <i class="fa fa-file-pdf-o fa-2x"></i>
+                                  <span style="font-weight:300;position: relative;top: -4px;left: 4px;">Dicmebre 2017</span>
+                                </div>
+                                <div class="col-md-4 g-my-20">
+                                  <a href="#">
+                                    <i class="fa fa-file-pdf-o fa-2x"></i>
+                                    <span style="font-weight:300;position: relative;top: -4px;left: 4px;">Septiembre 2017</span>
+                                  </div>
+                                  <div class="col-md-4 g-my-20">
+                                    <a href="#">
+                                      <i class="fa fa-file-pdf-o fa-2x"></i>
+                                      <span style="font-weight:300;position: relative;top: -4px;left: 4px;">Junio 2017</span>
+                                    </div>
+                                    <div class="col-md-4 g-my-20">
+                                      <a href="#">
+                                        <i class="fa fa-file-pdf-o fa-2x"></i>
+                                        <span style="font-weight:300;position: relative;top: -4px;left: 4px;">Mayo 2017</span>
+                                      </div>
+                                      <div class="col-md-4 g-my-20">
+                                        <a href="#">
+                                          <i class="fa fa-file-pdf-o fa-2x"></i>
+                                          <span style="font-weight:300;position: relative;top: -4px;left: 4px;">Febrero 2017</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- End Card -->
+
+                                <!-- Card -->
+                                <div class="card g-mb-5">
+                                  <div id="accordion-01-heading-03" class="card-header" role="tab">
+                                    <h5 class="mb-0">
+                                      <a class="collapsed d-block u-link-v5 g-color-main g-color-primary--hover" href="#accordion-01-body-03" data-toggle="collapse" data-parent="#accordion-01" aria-expanded="false" aria-controls="accordion-01-body-03">
+                                        2016
+                                      </a>
+                                    </h5>
+                                  </div>
+                                  <div id="accordion-01-body-03" class="collapse" role="tabpanel" aria-labelledby="accordion-01-heading-03" data-parent="#accordion-01">
+                                    <div class="card-block">
+                                      <div class="row">
+                                        <div class="col-md-4 g-my-20">
+                                          <a href="#">
+                                            <i class="fa fa-file-pdf-o fa-2x"></i>
+                                            <span style="font-weight:300;position: relative;top: -4px;left: 4px;">Dicmebre 2016</span>
+                                          </div>
+                                          <div class="col-md-4 g-my-20">
+                                            <a href="#">
+                                              <i class="fa fa-file-pdf-o fa-2x"></i>
+                                              <span style="font-weight:300;position: relative;top: -4px;left: 4px;">Septiembre 2016</span>
+                                            </div>
+                                            <div class="col-md-4 g-my-20">
+                                              <a href="#">
+                                                <i class="fa fa-file-pdf-o fa-2x"></i>
+                                                <span style="font-weight:300;position: relative;top: -4px;left: 4px;">Junio 2016</span>
+                                              </div>
+                                              <div class="col-md-4 g-my-20">
+                                                <a href="#">
+                                                  <i class="fa fa-file-pdf-o fa-2x"></i>
+                                                  <span style="font-weight:300;position: relative;top: -4px;left: 4px;">Mayo 2016</span>
+                                                </div>
+                                                <div class="col-md-4 g-my-20">
+                                                  <a href="#">
+                                                    <i class="fa fa-file-pdf-o fa-2x"></i>
+                                                    <span style="font-weight:300;position: relative;top: -4px;left: 4px;">Febrero 2016</span>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <!-- End Card -->
+                                        </div>
+                                      </div>
+
+
+                                      {# FIN ACORDEON ESTADOS FINANCIEROS #}
+
+
+																							</div>
+																						</div>
+																					</div>
+				    <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <a class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      MEMORIAS
+                    </a>
+                  </h2>
                 </div>
-              
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body"></div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <a class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      OTROS
+                    </a>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          </div>
+          </div>
 
 
+																		</section>
+																		<!-- SECCION ICONOS -->
 
 
-
-
-
-
-{# FIN ACORDEON ESTADOS FINANCIEROS #}
-
-
-
-
-
-
-
-
-
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h2 class="mb-0">
-        <a class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-         MEMORIAS
-        </a>
-      </h2>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <div class="card-body">
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h2 class="mb-0">
-        <a class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          OTROS
-        </a>
-      </h2>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-      <div class="card-body">
-      </div>
-    </div>
-  </div>
-</div>
-
-</div>
-
-
-
-</section>
-<!-- SECCION ICONOS -->
-
-
-
-
-
-
-
-{% endblock %}
-{% block javascripts  %}
-{{ parent() }}
-{% endblock %}
+																	{% endblock %}
+																	{% block javascripts  %}
+																		{{ parent() }}
+																	{% endblock %}

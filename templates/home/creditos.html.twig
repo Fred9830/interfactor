@@ -1,174 +1,203 @@
-{% extends 'base.html.twig' %}     
+{% extends 'base.html.twig' %}
 
 {% block stylesheets %}
-    {{ parent() }}
+	{{ parent() }}
 
 {% endblock %}
 
 
 {% block body %}
 
- <!-- INICIO BANNER -->
-  <section class="g-mt-130 g-pt-50">
-        <img src=" {{ asset('assets/img/banner/banner-credito-1.jpg') }}" class="img-fluid imgbanner g-hidden-md-down" alt="Responsive image">
-        <img src=" {{ asset('assets/img/banner/banner-credito-2.jpg') }}" class="img-fluid imgbanner g-hidden-lg-up " alt="Responsive image">
-        <div class="cuadro" data-animation="bounceInLeft" data-animation-delay="0" data-animation-duration="1000">
-       <div  class="padding-cuadro"> 
-       <p class="titulo-cuadro blanco">CRÉDITO A<br>TU MEDIDA</p>
-        <strong class="blanco">PARA APOYAR TUS GANAS<br>DE CRECER</strong>
-        </div>
-        </div>
+	<!-- INICIO BANNER -->
+	<section id="banner-creditos" class="g-mt-130 g-pt-50">
+		<img src=" {{ asset('assets/img/banner/banner-credito-1.jpg') }}" class="img-fluid imgbanner g-hidden-md-down" alt="Responsive image">
+		<img src=" {{ asset('assets/img/banner/banner-credito-2.jpg') }}" class="img-fluid imgbanner g-hidden-lg-up " alt="Responsive image">
+		<div class="cuadro" data-animation="bounceInLeft" data-animation-delay="0" data-animation-duration="1000">
+			<div class="padding-cuadro">
+				<p class="titulo-cuadro blanco">CRÉDITO A<br>TU MEDIDA</p>
+				<strong class="blanco">PARA APOYAR TUS GANAS<br>DE CRECER</strong>
+			</div>
+		</div>
 
+	</section>
+	<!-- FIN BANNER -->
+
+	{# INICIO TEXTO #}
+<section id="texto-creditos">
+	<div class="row">
+		<div class="col-md-6 offset-md-4 g-pb-20 g-pt-40">
+			Cuando necesitas un verdadero apoyo para impulsar tu PYME: tenemos una solución de financiamiento más ágil, flexible y conveniente especialmente diseñadas para tus requerimientos de corto plazo.
+			<br><br><ul>
+				<li>
+					<span style="color:#555">Financiamiento de Estados de Pago.</span>
+				</li>
+				<li>
+					<span style="color:#555">Financiamiento de Órdenes de Compra.</span>
+				</li>
+				<li>
+					<span style="color:#555">Crédito para capital de trabajo.</span>
+				</li>
+				<li>
+					<span style="color:#555">Crédito a mediano plazo con garantía exógena.</span>
+				</li>
+				<li>
+					<span style="color:#555">Crédito para financiamiento de contratos con prenda y mandato de cobro.</span>
+				</li>
+			</ul>
+		</div>
+	</div>
   </section>
-    <!-- FIN BANNER -->
-
-    {# INICIO TEXTO #}
-
-<div class="row">
-<div class="col-md-6 offset-md-4 g-pb-20 g-pt-40">
-Cuando necesitas un verdadero apoyo para impulsar tu PYME: tenemos una solución de financiamiento más ágil, flexible y conveniente especialmente diseñadas para tus requerimientos de corto plazo.
-<br><br><ul>
-<li><span style="color:#555">Financiamiento de Estados de Pago.</span></li>
-<li><span style="color:#555">Financiamiento de Órdenes de Compra.</span></li>
-<li><span style="color:#555">Crédito para capital de trabajo.</span></li>
-<li><span style="color:#555">Crédito a mediano plazo con garantía exógena.</span></li>
-<li ><span style="color:#555">Crédito para financiamiento de contratos con prenda y mandato de cobro.</span></li>
-</ul></div>
 
 
- {# FIN TEXTO #}
+	{# FIN TEXTO #}
 
-{# INICIO TEXTO #}
-<div class="col-md-6 offset-md-4 g-pb-30 text-center">
-<span style="font-size:28px; font-weight:300">No esperes más. ¡Solicita una cotización hoy mismo!</span>
+	{# INICIO TEXTO #}
+  <div class="row">
+	<div class="col-md-6 offset-md-4 g-pb-30 text-center">
+		<span style="font-size:28px; font-weight:300">No esperes más. ¡Solicita una cotización hoy mismo!</span>
 
-</div>
-{# FIN TEXTO #}
-
-{# INICIO FORM #}
-
-
-
-
-<div id="cotizador" class="row" style="background:#E6E6E6">
-<div class="col-md-6 offset-md-4 g-pb-20 g-pt-20 text-center">
-<span style="font-size:18px;"><strong>COMPLETA TUS DATOS Y UNO DE NUESTROS EJECUTIVOS DE CRÉDITOS SE PONDRÁ EN CONTACTO CONTIGO PARA OFRECERTE UNA SOLUCIÓN A LA MEDIDA DE TUS NECESIDADES.</strong></span>
-
-</div>
-{# INICIOIMAGEN FORM #}
-<div class="col-md-4">
-        <img src=" {{ asset('assets/img/img-form-1.jpg') }}" class="img-fluid text-right g-pt-60" style="float:right" alt="Responsive image">
-
-</div>
-{# FIN IMAGEN FORM #}
-<div class="col-md-6">
-
-            <div class="shortcode-html">
-              <!-- General Forms -->
-              <form class="g-brd-around  g-pa-30 g-mb-30">
-                <!-- Text nombre de empresa -->
-                <div class="col-md-12">
-                <div class="form-group g-mb-20">
-                  <label class="g-mb-10" for="inputGroup1_1">Nombre Empresa <span style="color:#C12A21">*</span></label>
-                  <input id="inputGroup1_1" class="form-control form-control-md rounded-0" type="text" placeholder="Ingrese Nombre de Empresa">
-                  {# <small class="form-text text-muted g-font-size-default g-mt-10">.</small> #}
-                </div>
-                </div>
-                <!-- End nombre de empresa -->
-                <!-- Text RUT de empresa -->
-                <div class="col-md-6">
-                <div class="form-group g-mb-20">
-                  <label class="g-mb-10" for="inputGroup1_1">Rut Empresa <span style="color:#C12A21">*</span></label>
-                  <input id="inputGroup1_1" class="form-control form-control-md rounded-0" type="number" placeholder="Ingrese Rut de Empresa">
-                  {# <small class="form-text text-muted g-font-size-default g-mt-10">.</small> #}
-                </div>
-                </div>
-                <!-- End nombre de empresa -->
-                
-                <div class="row">
-                <!-- Text RUT de empresa -->
-                <div class="col-md-6">
-                <div class="form-group g-mb-20">
-                  <label class="g-mb-10" for="inputGroup1_1">Teléfono <span style="color:#C12A21">*</span></label>
-                  <input id="inputGroup1_1" class="form-control form-control-md rounded-0" type="number" placeholder="Ingrese Teléfono">
-                  {# <small class="form-text text-muted g-font-size-default g-mt-10">.</small> #}
-                </div>
-                <div class="form-group g-mb-20">
-                  <label class="g-mb-10" for="inputGroup1_1">E-mail <span style="color:#C12A21">*</span></label>
-                  <input id="inputGroup1_1" class="form-control form-control-md rounded-0" type="email" placeholder="Ingrese E-mail">
-                  {# <small class="form-text text-muted g-font-size-default g-mt-10">.</small> #}
-                </div>
-                </div>
-                <!-- End nombre de empresa -->
-                 <!-- Text RUT de empresa -->
-                <div class="col-md-6">
-                <!-- Textarea -->
-  <div class="form-group g-mb-20">
-    <label class="g-mb-10" for="inputGroup2_1">Mensaje <span style="color:#C12A21">*</span></label>
-    <textarea id="inputGroup2_1" class="form-control form-control-md g-resize-none rounded-0" rows="6" placeholder="Text area"></textarea>
-    {# <small class="form-text text-muted g-font-size-default g-mt-10">
-          
-        </small> #}
+	</div>
   </div>
-  <!-- End Textarea -->
-                </div>
-                </div>
-                 
-                
-                
-                <div class="text-center">
-                <button type="submit" class="btn btn-md u-btn-red rounded-0 g-mt-30" style="padding:10px 50px"><strong>COTIZAR</strong></button>
-                </div>
+	{# FIN TEXTO #}
 
-                <span style="color:#C12A21;font-weight:300">* Campos Obligatorios</span>
-                
+	{# INICIO FORM #}
 
-               
-                <!-- End Text Input with Both Appended Icon -->
-              </form>
-              <!-- End General Forms -->
-            </div>
+<section id="cotizador">
+	<div class="row" style="background:#E6E6E6">
+		<div class="col-md-6 offset-md-4 g-pb-20 g-pt-20 text-center">
+			<span style="font-size:18px;">
+				<strong>COMPLETA TUS DATOS Y UNO DE NUESTROS EJECUTIVOS DE CRÉDITOS SE PONDRÁ EN CONTACTO CONTIGO PARA OFRECERTE UNA SOLUCIÓN A LA MEDIDA DE TUS NECESIDADES.</strong>
+			</span>
 
-            <div class="shortcode-styles">
-              <!-- CSS Implementing Plugins -->
-              <link  rel="stylesheet" href="../../../assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
-            </div>
+		</div>
+		{# INICIOIMAGEN FORM #}
+		<div class="col-md-4">
+			<img src=" {{ asset('assets/img/img-form-1.jpg') }}" class="img-fluid text-right g-pt-60" style="float:right" alt="Responsive image">
 
-            <div class="shortcode-scripts">
-              <!-- jQuery UI Core -->
-              <script  src="../../../assets/vendor/jquery-ui/jquery-ui.core.js"></script>
+		</div>
+		{# FIN IMAGEN FORM #}
+		<div class="col-md-6">
 
-              <!-- jQuery UI Helpers -->
-              <script  src="../../../assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
-              <script  src="../../../assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+			<div
+				class="shortcode-html">
+				<!-- General Forms -->
+				<form
+					class="g-brd-around  g-pa-30 g-mb-30">
+					<!-- Text nombre de empresa -->
+					<div class="col-md-12">
+						<div class="form-group g-mb-20">
+							<label class="g-mb-10" for="inputGroup1_1">Nombre Empresa
+								<span style="color:#C12A21">*</span>
+							</label>
+							<input
+							id="inputGroup1_1" class="form-control form-control-md rounded-0" type="text" placeholder="Ingrese Nombre de Empresa">
+						{# <small class="form-text text-muted g-font-size-default g-mt-10">.</small> #}
+						</div>
+					</div>
+					<!-- End nombre de empresa -->
+					<!-- Text RUT de empresa -->
+					<div class="col-md-6">
+						<div class="form-group g-mb-20">
+							<label class="g-mb-10" for="inputGroup1_1">Rut Empresa
+								<span style="color:#C12A21">*</span>
+							</label>
+							<input
+							id="inputGroup1_1" class="form-control form-control-md rounded-0" type="number" placeholder="Ingrese Rut de Empresa">
+						{# <small class="form-text text-muted g-font-size-default g-mt-10">.</small> #}
+						</div>
+					</div>
+					<!-- End nombre de empresa -->
 
-              <!-- jQuery UI Widgets -->
-              <script  src="../../../assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+					<div
+						class="row">
+						<!-- Text RUT de empresa -->
+						<div class="col-md-6">
+							<div class="form-group g-mb-20">
+								<label class="g-mb-10" for="inputGroup1_1">Teléfono
+									<span style="color:#C12A21">*</span>
+								</label>
+								<input
+								id="inputGroup1_1" class="form-control form-control-md rounded-0" type="number" placeholder="Ingrese Teléfono">
+							{# <small class="form-text text-muted g-font-size-default g-mt-10">.</small> #}
+							</div>
+							<div class="form-group g-mb-20">
+								<label class="g-mb-10" for="inputGroup1_1">E-mail
+									<span style="color:#C12A21">*</span>
+								</label>
+								<input
+								id="inputGroup1_1" class="form-control form-control-md rounded-0" type="email" placeholder="Ingrese E-mail">
+							{# <small class="form-text text-muted g-font-size-default g-mt-10">.</small> #}
+							</div>
+						</div>
+						<!-- End nombre de empresa -->
+						<!-- Text RUT de empresa -->
+						<div
+							class="col-md-6">
+							<!-- Textarea -->
+							<div class="form-group g-mb-20">
+								<label class="g-mb-10" for="inputGroup2_1">Mensaje
+									<span style="color:#C12A21">*</span>
+								</label>
+								<textarea id="inputGroup2_1" class="form-control form-control-md g-resize-none rounded-0" rows="6" placeholder="Text area"></textarea>
+								{# <small class="form-text text-muted g-font-size-default g-mt-10">
+																	          
+																	        </small> #}
+							</div>
+							<!-- End Textarea -->
+						</div>
+					</div>
 
-              <!-- JS Unify -->
-              <script  src="../../../assets/js/components/hs.autocomplete.js"></script>
 
-              <!-- JS Plugins Init. -->
-              <script >
-                $(document).on('ready', function () {
-                      // initialization of autocomplet
-                      $.HSCore.components.HSAutocomplete.init('#autocomplete2');
-                    });
-              </script>
-            </div>
-          
-               
-              
-</div>
-{# FIN FORM #}
+					<div class="text-center">
+						<button type="submit" class="btn btn-md u-btn-red rounded-0 g-mt-30" style="padding:10px 50px">
+							<strong>COTIZAR</strong>
+						</button>
+					</div>
+
+					<span style="color:#C12A21;font-weight:300">* Campos Obligatorios</span>
 
 
+					<!-- End Text Input with Both Appended Icon -->
+				</form>
+				<!-- End General Forms -->
+			</div>
+
+			<div
+				class="shortcode-styles">
+				<!-- CSS Implementing Plugins -->
+				<link rel="stylesheet" href="../../../assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+			</div>
+
+			<div
+				class="shortcode-scripts">
+				<!-- jQuery UI Core -->
+				<script src="../../../assets/vendor/jquery-ui/jquery-ui.core.js"></script>
+
+				<!-- jQuery UI Helpers -->
+				<script src="../../../assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+				<script src="../../../assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+
+				<!-- jQuery UI Widgets -->
+				<script src="../../../assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+
+				<!-- JS Unify -->
+				<script src="../../../assets/js/components/hs.autocomplete.js"></script>
+
+				<!-- JS Plugins Init. -->
+				<script>
+					$(document).on('ready', function () { // initialization of autocomplet
+$.HSCore.components.HSAutocomplete.init('#autocomplete2');
+});
+				</script>
+			</div>
 
 
+		</div>
+    </section>
+		{# FIN FORM #}
 
 
-
-{% endblock %}
-{% block javascripts  %}
-    {{ parent() }}
-{% endblock %}
+	{% endblock %}
+	{% block javascripts  %}
+		{{ parent() }}
+	{% endblock %}

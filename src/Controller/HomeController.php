@@ -22,13 +22,7 @@ class HomeController extends AbstractController
     {
         return $this->render('home/empresa.html.twig');
     }
-               /**
-     * @Route("/antecedentes", name="antecedentes")
-     */
-    public function antecedentes()
-    {
-        return $this->render('home/antecedentes.html.twig');
-    }
+  
                 /**
      * @Route("/blog", name="blog")
      */

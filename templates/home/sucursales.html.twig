@@ -11,7 +11,10 @@
 	<!-- INICIO BANNER -->
 	<section id="banner.sucursales">
 		<div class="g-mt-130 g-py-50">
-			<img src=" {{ asset('assets/img/banner/banner-sucursales-1.jpg') }}" class="img-fluid imgbanner" alt="Responsive image">
+			<img src=" {{ asset('assets/img/banner/banner-sucursales-2.jpg') }}" class="img-fluid imgbanner g-hidden-md-down" alt="Responsive image">
+			<img src=" {{ asset('assets/img/banner/banner-sucursales-3.jpg') }}" class="img-fluid imgbanner g-hidden-lg-up " alt="Responsive image">
+
+
 			<div class="cuadro" data-animation="bounceInLeft" data-animation-delay="0" data-animation-duration="1000">
 				<div style="padding:28px">
 					<p class="titulo-cuadro blanco">SUCURSALES</p>
@@ -23,8 +26,104 @@
 	</section>
 	<!-- FIN BANNER -->
 
+	<section id="select-sucursales">
+		<div class="row">
+			<div class="col-md-6 offset-md-4 g-pb-20 g-pt-40">
 
-{% endblock %}
-{% block javascripts  %}
-	{{ parent() }}
-{% endblock %}
+						<form>
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label for="inputState">Región</label>
+									<select id="inputState" class="form-control">
+										<option selected>Metropolitana de Santiago.</option>
+										<option>...</option>
+									</select>
+								</div>
+							</div>
+						<form>
+
+						<div class="row align-items-center" style="padding:20px;border-bottom:solid 1px gray">
+							<div class="col-md-2">
+								<p>Mac Iver</p>
+							</div>
+							<div class="col-md-6 ">
+								<p style="padding:0;margin:0">
+									<span class="u-icon-v1">
+										<i class="icon-location-pin"></i>
+									</span>
+									Mac-Iver 440, Of. 1204, Santiago</p>
+								<p style="padding:0;margin:0">
+									<span class="u-icon-v1">
+										<i class="icon-phone"></i>
+									</span>
+									2 3293 6667 / 2 3293 6669
+								</p>
+								<p style="padding:0;margin:0">
+								<span class="u-icon-v1 g-py-20">
+									<i class="icon-hotel-restaurant-003 u-line-icon-pro"></i>
+								</span>
+								</p>
+							</div>
+							<div class="col-md-4">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.453825313715!2d-70.6495871849881!3d-33.43748108077772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a25a3bb9b7%3A0x61e43d35255c739e!2sEnrique%20Mac%20Iver%20440%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1597077649690!5m2!1ses!2scl" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+							</div>
+						</div>
+						<div class="row align-items-center" style="padding:20px;border-bottom:solid 1px gray">
+							<div class="col-md-2">
+								<p>Melipilla</p>
+							</div>
+							<div class="col-md-6 ">
+								<p style="padding:0;margin:0">
+									<span class="u-icon-v1">
+										<i class="icon-location-pin"></i>
+									</span>
+									Serrano 334, Of. 403, Edificio Sol Andino</p>
+								<p style="padding:0;margin:0">
+									<span class="u-icon-v1">
+										<i class="icon-phone"></i>
+									</span>
+									2 3293 6676 / 2 3293 6677
+								</p>
+								<p style="padding:0;margin:0">
+								<span class="u-icon-v1 g-py-20">
+									<i class="icon-hotel-restaurant-003 u-line-icon-pro"></i>
+								</span>
+								</p>
+							</div>
+							<div class="col-md-4">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.0030725589795!2d-70.65044638498776!3d-33.44922648077431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c50b0a99a763%3A0xaf92ecf2984faa85!2sSerrano%20334%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1597079242357!5m2!1ses!2scl" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+							</div>
+						</div>
+						<div class="row align-items-center" style="padding:20px;border-bottom:solid 1px gray">
+							<div class="col-md-2">
+								<p>Maza Matríz</p>
+							</div>
+							<div class="col-md-6 ">
+								<p style="padding:0;margin:0">
+									<span class="u-icon-v1">
+										<i class="icon-location-pin"></i>
+									</span>
+									Av. Ricardo Lyon 222, Piso 4, Providencia</p>
+								<p style="padding:0;margin:0">
+									<span class="u-icon-v1">
+										<i class="icon-phone"></i>
+									</span>
+									2 2654 9000</p>
+									<p style="padding:0;margin:0">
+								<span class="u-icon-v1 g-py-20">
+									<i class="icon-hotel-restaurant-003 u-line-icon-pro"></i>
+								</span>
+								</p>
+							</div>
+							<div class="col-md-4">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.997099252025!2d-70.61099488498849!3d-33.423319980781805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf6f4e9bab8b%3A0x4069d540b0bd1a8c!2sAv.%20Ricardo%20Lyon%20222%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1597088027666!5m2!1ses!2scl" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+							</div>
+			</div>
+		</div>
+	</section>
+
+
+			{% endblock %}
+			{% block javascripts  %}
+				{{ parent() }}
+			{% endblock %}

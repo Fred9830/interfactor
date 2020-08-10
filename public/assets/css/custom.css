@@ -7,7 +7,9 @@ body {
 @media (min-width: 1025px) and (max-width: 1440px){
     .col-xl-2 {
         max-width: 14.285%;
+        
      }
+
 }
 .logo{
     width: 100%;
@@ -143,7 +145,7 @@ label {font-weight: 300;}
 .titulo-single-post{
     position: absolute;
     top: 300px;
-    left: 490px;
+    left: 34%;
     font-size: 2.14286rem;
     font-weight: 300;
     padding: 0px 105px 0 0; 
@@ -231,7 +233,7 @@ li {
     font-size: 18px;    
     }
     .titulo-single-post{
-        top: 300px;
+        top: 270px;
         left: 435px ;
     }
     .footer-soporte {
@@ -283,10 +285,7 @@ li {
         background-color: #485463;
         color: #ffffff;
         padding: 30px 10px 20px 14px;
-    }    .logo{
-        width: 100%;
-    margin: 0 0 0 45%
-    }
+    }  
    
 
   }
@@ -493,5 +492,15 @@ li {
                 line-height: 20px;
                 margin-bottom: 5px;
             }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px){
+
+    .col-xl-2{
+        max-width: 14.28%;
+        }
+        .cuadro{
+            height: 250px;
+        }
 }
 

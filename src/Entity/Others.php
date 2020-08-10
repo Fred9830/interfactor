@@ -28,7 +28,7 @@ class Others
     private $archive;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Years::class, inversedBy="others")
+     * @ORM\ManyToOne(targetEntity=YearOther::class, inversedBy="others")
      * @ORM\JoinColumn(nullable=false)
      */
     private $year;
@@ -62,15 +62,17 @@ class Others
         return $this;
     }
 
-    public function getYear(): ?Years
+    public function getYear(): ?YearOther
     {
         return $this->year;
     }
 
-    public function setYear(?Years $year): self
+    public function setYear(?YearOther $year): self
     {
         $this->year = $year;
 
         return $this;
     }
+
+    
 }

@@ -28,7 +28,7 @@ class Statements
     private $archive;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Years::class, inversedBy="statements")
+     * @ORM\ManyToOne(targetEntity=YearState::class, inversedBy="statements")
      * @ORM\JoinColumn(nullable=false)
      */
     private $year;
@@ -62,15 +62,17 @@ class Statements
         return $this;
     }
 
-    public function getYear(): ?Years
+    public function getYear(): ?YearState
     {
         return $this->year;
     }
 
-    public function setYear(?Years $year): self
+    public function setYear(?YearState $year): self
     {
         $this->year = $year;
 
         return $this;
     }
+
+   
 }

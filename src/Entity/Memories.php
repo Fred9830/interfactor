@@ -28,7 +28,7 @@ class Memories
     private $archive;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Years::class, inversedBy="memories")
+     * @ORM\ManyToOne(targetEntity=YearMemory::class, inversedBy="memories")
      * @ORM\JoinColumn(nullable=false)
      */
     private $year;
@@ -62,15 +62,16 @@ class Memories
         return $this;
     }
 
-    public function getYear(): ?Years
+    public function getYear(): ?YearMemory
     {
         return $this->year;
     }
 
-    public function setYear(?Years $year): self
+    public function setYear(?YearMemory $year): self
     {
         $this->year = $year;
 
         return $this;
     }
+
 }

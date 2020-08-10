@@ -6,7 +6,9 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use App\Entity\Years;
+use App\Entity\YearState;
+use App\Entity\YearMemory;
+use App\Entity\YearOther;
 use App\Entity\Others;
 use App\Entity\Statements;
 use App\Entity\Memories;
@@ -20,16 +22,31 @@ class BackgroundController extends AbstractController
     {
         $em = $this->getDoctrine()->getManager();
 
-        $years = $em->getRepository(Years::class)->findAll(); 
+        $yearstate = $em->getRepository(YearState::class)->findAll(); 
+        $yearmemo = $em->getRepository(YearMemory::class)->findAll(); 
+        $yearother = $em->getRepository(YearOther::class)->findAll(); 
 
-      foreach ($years as $ls => $year) {
-          $yearm[$ls] = [
-              'name' => $year->getName()
-          ];
-      }
+        foreach ($yearstate as $ls => $year) {
+            $years[$ls] = [
+                'name' => $year->getName()
+            ];
+        }
+
+        foreach ($yearmemo as $ls => $year) {
+            $yearm[$ls] = [
+                'name' => $year->getName()
+            ];
+        }
+     
+        foreach ($yearother as $ls => $year) {
+            $yearo[$ls] = [
+                'name' => $year->getName()
+            ];
+        }
+  
 
 
-        foreach ($years as $key => $val) {
+        foreach ($yearstate as $key => $val) {
   
                 foreach ($val->getStatements() as $pd => $state) {
                    
@@ -39,7 +56,7 @@ class BackgroundController extends AbstractController
                 }
         }
 
-        foreach ($years as $uh => $old) {
+        foreach ($yearmemo as $uh => $old) {
   
             foreach ($old->getMemories() as $lm => $memory) {
                
@@ -49,7 +66,7 @@ class BackgroundController extends AbstractController
             }
         }
 
-        foreach ($years as $po => $ler) {
+        foreach ($yearother as $po => $ler) {
   
             foreach ($ler->getOthers() as $gg => $others) {
                
@@ -60,7 +77,9 @@ class BackgroundController extends AbstractController
         }
      
         return $this->render('home/antecedentes.html.twig', [
-            'year' => $yearm,
+            'yearstate' => $years,
+            'yearmemo' => $yearm,
+            'yearother' => $yearo,
             'finan' => $finan,
             'memory' => $memoyear,
             'other' => $othyear
@@ -78,7 +97,9 @@ class BackgroundController extends AbstractController
         $em = $this->getDoctrine()->getManager();
         $id = $params['id'];
 
-        $years = $em->getRepository(Years::class)->find($id);
+        $yearsoth = $em->getRepository(YearOther::class)->find($id);
+        $yearstate = $em->getRepository(YearState::class)->find($id);
+        $yearmemo = $em->getRepository(YearMemo::class)->find($id);
 
         if (empty($others)) {
             $data =[
@@ -89,7 +110,7 @@ class BackgroundController extends AbstractController
         }
 
 
-            foreach ($years->getOthers() as $key => $oth) {
+            foreach ($yearsoth->getOthers() as $key => $oth) {
 
                 $list_oth[$key]= [
                     'id' => $oth->getId(),
@@ -100,7 +121,7 @@ class BackgroundController extends AbstractController
 
             }
 
-            foreach ($years->getStatements() as $key => $state) {
+            foreach ($yearstate->getStatements() as $key => $state) {
 
                 $list_state[$key]= [
                     'id' => $state->getId(),
@@ -111,7 +132,7 @@ class BackgroundController extends AbstractController
             }
 
             
-            foreach ($years->getMemories() as $key => $memory) {
+            foreach ($yearmemo->getMemories() as $key => $memory) {
 
                 $list_memory[$key]= [
                     'id' => $memory->getId(),
@@ -136,6 +157,50 @@ class BackgroundController extends AbstractController
 
     }
 
+    /**
+     * @Route("/vector_api", name="vector")
+     */
+    public function vector(Request $request)
+    {
      
+        $em = $this->getDoctrine()->getManager();
+
+        $other = $em->getRepository(Others::class)->findAll(); 
+        $state = $em->getRepository(Statements::class)->findAll(); 
+        $memory = $em->getRepository(Memories::class)->findAll(); 
+      
+        foreach ($other as $key => $val) {
+  
+            $otherarr[$key]= $val->getYear()->getName(); 
+        }
+
+        
+        foreach ($state as $kye => $value) {
+  
+            $statearr[$kye]= $value->getYear()->getName(); 
+        }
+
+        
+        foreach ($memory as $kyo => $vlu) {
+  
+            $memoarr[$kyo]= $vlu->getYear()->getName(); 
+        }
+
+
+        $poderoso = array_merge($otherarr, $statearr, $memoarr); 
+
+        $data =[
+            'status' => 'success',
+            'todoarr'   => $poderoso
+        ];
+
+
+        return new Response(
+            json_encode(array( 'response' => $data )),
+            200,
+            array('Content-Type' => 'application/json')
+        );
+      
+    }
     
 }

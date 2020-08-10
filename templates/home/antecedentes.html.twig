@@ -39,15 +39,12 @@
 <seccion class="container-fluid">
   <div class="row">
     <div class="col-md-4">
-      {% for years in year %}
-      <li>{{ years.name }}</li>
-      {% endfor %} 
 
     </div>
 
     <div class="col-md-6">
       
-      {% for years in year %}       
+      {% for years in yearstate %}       
               {% for key, finans in finan %}
 
                   {% if years.name == key  %}
@@ -64,7 +61,7 @@
       {% endfor %} 
 
 
-      {% for years in year %}       
+      {% for years in yearmemo %}       
       {% for uh, memorys in memory %}
 
           {% if years.name == uh  %}
@@ -81,7 +78,7 @@
       {% endfor %} 
 
 
-      {% for years in year %}       
+      {% for years in yearother %}       
       {% for po, others in other %}
 
           {% if years.name == po  %}
@@ -98,12 +95,11 @@
       {% endfor %} 
 
 
-
-
-
     </div>
   </div>
 </seccion>
+
+<div id='foo'></div>
 
 
 
@@ -264,4 +260,6 @@
 {% endblock %}
 {% block javascripts  %}
 {{ parent() }}
+
+<script type="text/javascript" src="{{ asset('assets/js/api/brackground.js') }}"></script> 
 {% endblock %}

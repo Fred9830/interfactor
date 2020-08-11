@@ -9,19 +9,17 @@
 {% block body %}
 
 	<!-- INICIO BANNER -->
-	<section id="banner-garantias">
-		<div class="g-mt-130 g-pt-50">
-			<img src=" {{ asset('assets/img/banner/banner-garantias-2.jpg') }}" class="img-fluid imgbanner g-hidden-md-down" alt="Responsive image">
-			<img src=" {{ asset('assets/img/banner/banner-garantias-3.jpg') }}" class="img-fluid imgbanner g-hidden-lg-up " alt="Responsive image">
-			<div class="cuadro" data-animation="bounceInLeft" data-animation-delay="0" data-animation-duration="1000">
-				<div class="padding-cuadro">
+<section id="banner-garantias">
+	<div class="g-mt-130 g-pt-50">
+		<div class= "banerw" style="background-image: url('{{ asset('assets/img/banner/banner-garantias-2.jpg') }}');" />
+			<div class="cuadro d-flex align-items-center" data-animation="bounceInLeft" data-animation-delay="0" data-animation-duration="1000">
+					<div class="padding-cuadro">
 					<p class="titulo-cuadro blanco">SEGURO DE<br>GARANTÍA</p>
 					<strong class="blanco">PARA RESPALDAR TODOS<br>TUS PROYECTOS</strong>
 				</div>
 			</div>
-    </div>
-
-	</section>
+		</div>
+</section>
 		<!-- FIN BANNER -->
 
 		{# INICIO TEXTO #}

@@ -3,69 +3,74 @@
 {% block stylesheets %}
 	{{ parent() }}
 
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href=" {{ asset('assets/vendor/master-slider/source/assets/css/masterslider.main.css') }} "> 
+	<link rel="stylesheet" href=" {{ asset('assets/slider/css/style.css') }} "> 
+
+  
 {% endblock %}
 
 
 {% block body %}
 
-	{# SLIDER #}
-	<div id="rev_slider_1083_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="background-color: transparent; padding: 0; margin: 0 auto;" data-alias="travel" data-source="gallery">
-		<div id="rev_slider_1083_1" class="rev_slider fullwidthabanner" style="display: none;" data-version="5.4.1">
-			<ul>
-				<li data-index="rs-3070" data-transition="parallaxhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="assets/img/travel1-100x50.jpg" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Number One">
-					<img class="rev-slidebg" src="{{ asset('assets/img/banner/banner-index.jpg') }}" alt="Image description" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10">
-				</li>
-				<li data-index="rs-3071" data-transition="parallaxhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="assets/img/travel2-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Number Two">
-					<img class="rev-slidebg" src="{{ asset('assets/img/banner/banner-index.jpg') }}" alt="Image description" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10">
-				</li>
-				<li data-index="rs-3072" data-transition="parallaxhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="assets/img/travel3-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Number Three">
-					<img class="rev-slidebg" src="{{ asset('assets/img/banner/banner-index.jpg') }}" alt="Image description" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10">
-				</li>
-				<li data-index="rs-3073" data-transition="parallaxhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="assets/img/travel4-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Number Four">
-					<img class="rev-slidebg" src="{{ asset('assets/img/banner/banner-index.jpg') }}" alt="Image description" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10">
-				</li>
-			</ul>
 
-
-			<!-- LAYER NR. 2 -->
-			<div id="slider-1083-layer-2" class="tp-caption Travel-SmallCaption tp-resizeme tp-static-layer" style="z-index: 6; white-space: nowrap;" data-x="['left','left','left','left']" data-y="['top','top','top','top']" data-hoffset="['90','90','60','40']" data-voffset="['353','313','263','203']" data-fontsize="['25','25','25','20']" data-lineheight="['30','30','30','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-startslide="0" data-endslide="3" data-frames='[
-				                   {"from":"opacity:0;","speed":300,"to":"o:1;","delay":500,"ease":"Power2.easeInOut"},
-				                   {"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}
-				                 ]' data-textalign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">Travel with us today at a discount rate.
-			</div>
-
-			<!-- LAYER NR. 3 -->
-			<div id="slider-1083-layer-3" class="tp-caption Travel-CallToAction rev-btn tp-static-layer" style="z-index: 7; white-space: nowrap; outline: none; box-shadow: none; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; cursor: pointer;" data-x="['left','left','left','left']" data-y="['top','top','top','top']" data-hoffset="['90','90','60','40']" data-voffset="['416','376','326','251']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="button" data-actions='[
-				                   {"event":"click","action":"scrollbelow","offset":"px"}
-				                 ]' data-responsive_offset="on" data-responsive="off" data-startslide="0" data-endslide="3" data-frames='[
-				                   {"from":"opacity:0;","speed":300,"to":"o:1;","delay":500,"ease":"Power2.easeInOut"},
-				                   {"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"},
-				                   {"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255, 255, 255, 1);bg:rgba(255, 255, 255, .15);bw:2px 2px 2px 2px;"}
-				                 ]' data-textalign="['left','left','left','left']" data-paddingtop="[12,12,12,12]" data-paddingright="[20,20,20,20]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[20,20,20,20]">Click Here
-				<i class="fa fa-long-arrow-right" style="margin-left: 10px;"></i>
-			</div>
-		</div>
-
-		<div class="tp-bannertimer tp-bottom" style="height: 7px; background-color: rgba(255, 255, 255, .25);"></div>
-	</div>
-</div>
-
-{# fin slider #}
 
 
 <!-- INICIO BANNER -->
 <section id="slider">
-	<div class="g-pt-170 g-py-50">
-		<img src=" {{ asset('assets/img/banner/banner-index-1.jpg') }}" class="img-fluid imgbanner" alt="Responsive image">
-
-	</div>
+	<div class="g-pt-170"></div>
 </section>
-<!-- FIN BANNER -->
-<!-- SECCION ICONOS -->
+
+
+  <!-- MasterSlider Main -->
+  <div id="masterslider" class="master-slider ms-skin-default">
+	<div class="ms-overlay-layers">
+	  <img class="ms-layer"
+		   src="{{ asset('assets/slider/img/blank.gif') }}"
+		   data-src="{{ asset('assets/slider/img/offroad-bg-slide1.jpg') }}"
+		   alt=""
+		   style=""
+		   data-ease="easeOutQuint"
+		   data-type="image"
+		   data-wait="true"
+		   data-offset-x="0"
+		   data-offset-y="0"
+		   data-origin="tl"
+		   data-position="normal" />
+	</div>
+
+	<div class="ms-slide" data-delay="5" data-fill-mode="fill" data-id="slide1">
+	  <img src="{{ asset('assets/slider/img/blank.gif') }}" alt="" title="" 
+	  data-src="{{ asset('assets/slider/img/imgslid.jpg') }}" />
+	
+	  <div class="ms-layer g-py-70--md"
+		   style=" color: #fff; font-family: 'Poppins', sans-serif; background: rgba(198, 6, 6,.85); padding: 10px;"
+		   data-effect="t(true,n,-90,n,n,n,n,n,n,n,n,n,n,n,n)"
+		   data-duration="2000"
+		   data-delay="200"
+		   data-ease="easeOutQuint"
+		   data-offset-x="100"
+		   data-offset-y="60"
+		   data-origin="tl"
+		   data-position="normal">
+
+
+		   <div  class="m-4">
+		   		<div class="text center g-font-size-30 g-font-size-50--md"><b>TRANQUILO...</b></div>
+				   <div class="text-right g-mt-20 g-font-size-15 g-font-size-25--md"><b>... estamos contigo</b></div>
+				   <div class="text-right g-mt-10 g-mt-30--md g-font-size-10 g-font-size-18--md">Respaldo financiero a la</div>
+				   <div class="text-right g-mt-5  g-font-size-10 g-font-size-18--md">medida de tu PYME.</div>
+		    </div>
+	  </div>
+	</div>
+  </div>
+  <!-- END MasterSlider Main -->
+
+
 <seccion id="iconos">
 	<div class="container">
 		<div class="col-md-12">
-			<div class="text-center g-mb-30">
+			<div class="text-center g-mt-20 g-mb-30">
 				<h2>
 					<span style="font-weight: 300;">¿Por qué</span>
 					<strong>
@@ -157,10 +162,97 @@
 </section>
 <!-- Fin seccion iconos-->
 <!-- TESTIMONIOS   -->
-<section id="testimonios">
-	<div class="g-pt-30">
-		<img src=" {{ asset('assets/img/banner/testimonios.jpg') }}" class="img-fluid" alt="Responsive image">
+<section class="homebs" id="testimonios">
+	<div class="row">
+	  <div class="col-12 d-none d-md-block m-0 p-0" style="background-image: url('{{ asset('assets/img/testimonio.jpg') }}');">
+		<div class="row m-0 p-0">
+			<div class=" col-md-6 text-center m-0 p-0">
+			<h2 style="margin-top: 80px;">TESTIMONIO</h2>
+			</div>
+			<div style=" background-color: rgba(255,255,255,0.7);" class="col-md-6 m-0 p-0 text-left">
+				<p style=" margin-left: 10%; color: black;" class="g-pt-50 g-pb-20">“Además de la agilidad en las operaciones se ha desarrollado un
+					vínculo de confianza y transparencia con el personal de Interfactor”</p>
+				<div style=" margin-left: 10%; " class="mb-4 text-left">
+					<p style="line-height:5px;"><b>Marcelo Araya</b></p>
+					<p style="line-height:5px ;"><b>Gerente de Administración</b></p>
+					<p style="line-height:5px ;"><b>Martinic</b></p>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+		<div class="col-12 d-block d-md-none text-center" style="background-image: url('{{ asset('assets/img/testim.jpg') }}');">
+			<div class="row">
+		
+				<div class="col-12">
+						<h3 class="mb-4 mt-4">TESTIMONIO</h3>
+				</div>
+
+			<div style=" background-color: rgba(255,255,255,0.7);" class="col-12 m-0 p-0 text-left">
+				<p style=" margin-left: 10%; color: black;" class="g-pt-50 g-pb-20">“Además de la agilidad en las operaciones se ha desarrollado un
+					vínculo de confianza y transparencia con el personal de Interfactor”</p>
+				<div style=" margin-left: 10%; " class="mb-4 text-left">
+					<p style="line-height:5px;"><b>Marcelo Araya</b></p>
+					<p style="line-height:5px ;"><b>Gerente de Administración</b></p>
+					<p style="line-height:5px ;"><b>Martinic</b></p>
+				</div>	
+			</div>
+		</div>
 	</div>
 </section>
-<!-- FIN TESTIMINIOS -->{% endblock %}{% block javascripts  %}
-{{ parent() }}{% endblock %}
+<!-- FIN TESTIMINIOS -->
+{% endblock %}
+
+{% block javascripts  %}
+{{ parent() }}
+  <!-- JS Master Slider -->
+  <script src=" {{ asset('assets/vendor/master-slider/source/assets/js/masterslider.min.js') }} "></script>
+
+<script>
+
+var slider = new MasterSlider();
+
+slider.control('arrows', {
+  autohide: true,
+  overVideo: true
+});
+slider.setup("masterslider", {
+  width: 1366,
+  height: 550,
+  minHeight: 0,
+  space: 0,
+  start: 1,
+  grabCursor: true,
+  swipe: true,
+  mouse: true,
+  keyboard: true,
+  layout: "fullwidth",
+  wheel: false,
+  autoplay: true,
+  instantStartLayers: true,
+  loop: true,
+  shuffle: false,
+  preload: 0,
+  heightLimit: true,
+  autoHeight: false,
+  smoothHeight: true,
+  endPause: false,
+  overPause: true,
+  fillMode: "fill",
+  centerControls: false,
+  startOnAppear: false,
+  layersMode: "center",
+  autofillTarget: "",
+  hideLayers: false,
+  fullscreenMargin: 0,
+  speed: 20,
+  dir: "h",
+  parallaxMode: 'swipe',
+  view: "parallaxMask"
+});
+
+
+</script>
+  
+
+{% endblock %}

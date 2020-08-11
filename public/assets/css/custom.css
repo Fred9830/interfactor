@@ -2,6 +2,24 @@
 body { 
     font-size: 15px;
 }
+.banerw{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }  
+
+
+.homebs{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+}
+
 
 
 @media (min-width: 1025px) and (max-width: 1440px){
@@ -183,8 +201,7 @@ li {
 
 .cuadro {position: absolute;
     width: 268px;
-    height: 186px;
-    top: 180px;
+    height: 165px;
     left: 210px;
     background: #C12A21;
     mix-blend-mode: hard-light;
@@ -226,9 +243,6 @@ li {
 
   @media (max-width: 1280px) {
 
-    .cuadro {
-             height: 165px;
-    }
     .padding-cuadro {padding: 14px 28px}
 
   .titulo-blog{
@@ -256,10 +270,6 @@ li {
   }
   @media (max-width: 1024px) {
 
-    .cuadro {
-        top: 180px;
-        height: 132px;
-    }
     .titulo-cuadro {
         font-size: 30px;
         line-height: 31px;
@@ -292,8 +302,14 @@ li {
    
 
   }
+  @media (min-width:768px) {
+    .banerw {
+        padding: 18px 0px;
+      }
+  }
   @media (max-width: 768px) {
-  .titulo-single-post{
+
+    .titulo-single-post{
     top: 220px !important;
     left: 270px !important;
   }
@@ -305,10 +321,7 @@ li {
     left:20px;
 }
 .cuadro {
-    top: 180px;
     left: 0;
-    height: 265px;
-    width: 35%;
     margin: 20px;
 }
 .titulo-cuadro {
@@ -355,11 +368,8 @@ li {
             font-size:0.8755rem
         }
         .cuadro {
-            top: 200px;
             left: 0;
-            height: 178px;
             width: 50%;
-            margin: 0;
         }
         .titulo-cuadro {
             font-size: 30px !important;
@@ -407,9 +417,8 @@ li {
                 font-size:0.75rem
             }
             .cuadro {
-                top: 183px;
                 left: 0;
-                height: 157px;
+                height: 100%;
                 width: 50%;
                 margin: 0;
             }
@@ -426,9 +435,8 @@ li {
 }
 @media (max-width: 360px) {
     .cuadro {
-    top: 183px;
+        top:0;
     left: 0;
-    height: 149px;
     width: 50%;
     margin: 0;
 }
@@ -479,13 +487,6 @@ li {
             .online {
                 font-size:0.625rem
             }
-            .cuadro {
-                top: 195px;
-    left: 0;
-    height: 134px;
-    width: 50%;
-    margin: 0;
-            }
             .blanco {
                 color: #fff;
                 font-size: 14px;
@@ -501,9 +502,6 @@ li {
 
     .col-xl-2{
         max-width: 14.28%;
-        }
-        .cuadro{
-            height: 250px;
         }
 }
 

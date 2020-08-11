@@ -21,8 +21,11 @@ margin: 0 0 0 45%
 
 a {cursor: pointer;}
 
-a:hover {color:#C12A21!important ;}
+a:hover {color:#fff!important ;}
 
+.nav-link:hover {
+    color: #C12A21 !important;
+}
 p {
     font-weight: 300;
 }
@@ -423,9 +426,9 @@ li {
 }
 @media (max-width: 360px) {
     .cuadro {
-    top: 188px;
+    top: 183px;
     left: 0;
-    height: 145px;
+    height: 149px;
     width: 50%;
     margin: 0;
 }

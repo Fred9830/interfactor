@@ -1,5 +1,4 @@
 jQuery( document ).ready(function() {
-
     
     jQuery.ajax({
         method: "GET",
@@ -11,6 +10,7 @@ jQuery( document ).ready(function() {
                 var todos = resp.response.todoarr; 
                 console.log(todos); 
 
+                jQuery('#hola').html(todos);
             }
         }
     });  
